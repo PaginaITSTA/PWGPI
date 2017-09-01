@@ -14,7 +14,6 @@
             rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
             crossorigin="anonymous">
         <link rel="stylesheet" href="css/navbar.css">
-
         <title>Gestión de proyectos Informáticos</title>
     </head>
 
@@ -23,7 +22,7 @@
         <nav class="navbar navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a href="{{URL::to("/")}}" class="navbar-brand"><b>SLAP</b> - Admin -</a>
+                    <a href="{{URL::to("/home.jsp")}}" class="navbar-brand"><b>SLAP</b> - Admin -</a>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target="#navbar-collapse">
                         <i class="fa fa-bars"></i>
