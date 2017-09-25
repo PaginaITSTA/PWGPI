@@ -17,12 +17,18 @@
         <title>Gestión de proyectos Informáticos</title>
 <!--=======-->
         <title>Gestión de proyectos Informáticos</title>
+<<<<<<< HEAD
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <!-->>>>>>> ad6118ed62141ffe6d75a274c2eecd68ab43d01f-->
+=======
+        
+        <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
+>>>>>>> ca78e2b42b48472c8229c10e691762359cd20b29
     </head>
 
     <body>
         <!-- Inicio de la pagina -->
+<<<<<<< HEAD
 <<<<<<< HEAD
         <nav class="navbar navbar-static-top">
             <div class="container">
@@ -122,17 +128,155 @@
 <!-->>>>>>> ad6118ed62141ffe6d75a274c2eecd68ab43d01f-->
             </div>
         </nav>
+=======
+>>>>>>> ca78e2b42b48472c8229c10e691762359cd20b29
 
-        <!-- contenido final de la página -->
+        <jsp:include page="../plantillas/navhome.jsp"/>
+
+
+        <!-- Slider de la página -->
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+            <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+            <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+            <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+            <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+        </div>
+
+
         <div class="container">
+
+
+            <!-- Texto que describe a la página -->
+
+            <h5 align="center">Referente a la página.</h5>
+
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">
+                        Mision
+                    </div>
+                    <div class="collapsible-body">
+                        <!-- Texto de la página -->
+                        <p>Ser una empresa con el mejor diseño, desarrollo y con la mejor
+                            solución tecnológica para los negocios de la Región, a través de calidad y
+                            confiabilidad.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+                        Vision
+                    </div>
+                    <div class="collapsible-body">
+                        <!-- Texto de la página -->
+                        <p>Que no reconozcan mejor opción competitiva de Software Tecnológico para las
+                            empresas de la Región.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header">
+                        Objetivo general
+                    </div>
+                    <div class="collapsible-body">
+                        <!-- Texto de la página -->
+                        <p>Desarrollar una página Web que brinde información de la materia de Gestión de
+                            Proyectos de Software a través de apuntes, materiales, tareas y actividades. Esto
+                            con la finalidad de que los estudiantes logren integrar todos los conocimientos
+                            adquiridos con respecto a otras materias.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header">
+                        Objetivos específicos.
+                    </div>
+                    <div class="collapsible-body">
+                        <!-- Texto de la página -->
+                        <p>&bull; Investigar las necesidades del cliente. <br>
+                            &bull; Analizar la información para saber cuáles son los puntos más importantes
+                            del desarrollo de la página.
+                            <br>
+                            &bull; Diseñar la base de datos y los módulos de la página con la finalidad de
+                            obtener los modelos de datos.
+                            <br>
+                            &bull; Crear el diseño de la página Web y realizar la codificación.
+                            <br>
+                            &bull; Verificar y detectar los errores.
+                            <br>
+                            &bull; Implementación de la página Web.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="card-panel teal">
+                        <span class="card-title white-text text-darken-4"><h5 align="center">Card Title</h5></span>
+                        <div class="row">
+                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m3">
+                    <div class="card-panel teal">
+                        <span class="card-title white-text text-darken-4"><h5 align="center">Card Title</h5></span>
+                        <div class="row">
+                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m3">
+                    <div class="card-panel teal">
+                        <span class="card-title white-text text-darken-4"><h5 align="center">Card Title</h5></span>
+                        <div class="row">
+                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m3">
+                    <div class="card-panel teal">
+                        <span class="card-title white-text text-darken-4"><h5 align="center">Card Title</h5></span>
+                        <div class="row">
+                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
-        <!-- Área final de la pagina -->
-        
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+
+        <!-- footer de la pagina -->
+        <jsp:include page="../plantillas/footerHome.jsp"/>
+
+        <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../js/materialize.min.js"></script>
+
+        <script>
+            //var Usuario = document.getElementById("valorOculto").value;
+
+            $(document).ready(function () {
+                $(".button-collapse").sideNav();
+                $(".select").material_select();
+                $(".dropdown-button").dropdown();
+                $('.parallax').parallax();
+                $(".carousel").carousel();
+            });
+        </script>
     </body>
+
 </html>
