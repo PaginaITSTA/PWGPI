@@ -9,12 +9,12 @@
     <head>
         <!-- Bootstrap -->
         <title>Gestión de proyectos Informáticos</title>
-        
-        <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
-    </head>
 
-    <body>
-        <!-- Inicio de la pagina -->
+        <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
+        </head>
+
+        <body>
+            <!-- Inicio de la pagina -->
 
         <jsp:include page="../plantillas/navhome.jsp"/>
 
@@ -148,20 +148,7 @@
         <!-- footer de la pagina -->
         <jsp:include page="../plantillas/footerHome.jsp"/>
 
-        <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="../js/materialize.min.js"></script>
-
-        <script>
-            //var Usuario = document.getElementById("valorOculto").value;
-
-            $(document).ready(function () {
-                $(".button-collapse").sideNav();
-                $(".select").material_select();
-                $(".dropdown-button").dropdown();
-                $('.parallax').parallax();
-                $(".carousel").carousel();
-            });
-        </script>
+        <jsp:include page="../plantillas/necesarioScripts.jsp"/>
     </body>
 
 </html>

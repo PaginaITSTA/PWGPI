@@ -30,8 +30,7 @@
                 <tbody>
                     <tr>
                         <td class="m1 s12">1</td>
-                        <td class="m4 s12">Introducción a la ge
-                            stión de proyectos.</td>
+                        <td class="m4 s12">Introducción a la gestión de proyectos.</td>
                         <td class="m6 s12">
                             1.1. Conceptos básicos para la gestión de proyectos.<br>
                             <ul class="collapsible" data-collapsible="accordion">
@@ -65,7 +64,7 @@
                             2.2 La gestión de proyectos usando un  marco de calidad.<br>
                             <ul class="collapsible" data-collapsible="accordion">
                                 <li>
-                                    <div class="collapsible-header">2.3 Estándares y Métricas decalidad en la ingeniería de software.<br></div>
+                                    <div class="collapsible-header">2.3 Estándares y Métricas de calidad en la ingeniería de software.<br></div>
                                     <div class="collapsible-body">
                                         &emsp;&emsp;2.3.1 CMMI.<br>
                                         &emsp;&emsp;2.3.2 MoProSoft.<br>
@@ -126,15 +125,6 @@
 
         <jsp:include page="../plantillas/footerGeneral.jsp"/>
 
-        <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="../js/materialize.min.js"></script>
-
-        <script>
-            $(document).ready(function () {
-                $(".button-collapse").sideNav();
-                $('select').material_select();
-                $('.modal').modal();
-            });
-        </script>
+        <jsp:include page="../plantillas/necesarioScripts.jsp"/>
     </body>
 </html>

@@ -6,43 +6,25 @@ package mx.edu.itsta.DTO;
  */
 public class DTOLogin {
 
-    public String nombre;
-    public String usuario;
-    public String apellido;
+    public String tipoUser;
     public String correo;
+    public String pass;
+
+    public DTOLogin(String tipoUser, String correo, String pass) {
+        this.tipoUser = tipoUser;
+        this.correo = correo;
+        this.pass = pass;
+    }
 
     public DTOLogin() {
     }
-
-    public DTOLogin(String nombre, String usuario, String apellido, String correo) {
-        this.nombre = nombre;
-        this.usuario = usuario;
-        this.apellido = apellido;
-        this.correo = correo;
+    
+    public String getTipoUser() {
+        return tipoUser;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setTipoUser(String tipoUser) {
+        this.tipoUser = tipoUser;
     }
 
     public String getCorreo() {
@@ -53,4 +35,11 @@ public class DTOLogin {
         this.correo = correo;
     }
 
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
 }
