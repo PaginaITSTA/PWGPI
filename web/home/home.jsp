@@ -8,14 +8,17 @@
 <html>
     <head>
         <!-- Bootstrap -->
+
         <title>Gestión de proyectos Informáticos</title>
+
 
         <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
         </head>
 
+
+
         <body>
             <!-- Inicio de la pagina -->
-
         <jsp:include page="../plantillas/navhome.jsp"/>
 
 
