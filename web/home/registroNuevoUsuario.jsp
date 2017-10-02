@@ -6,6 +6,7 @@
 
 <jsp:useBean class="mx.edu.itsta.DTO.DTOuser" id="DTOUser" scope="session"></jsp:useBean>
 
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,15 +14,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registro de un nuevo usuario</title>
 
-        <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
-        </head>
+        <jsp:include page="../plantillas/necesarioParaPw.jsp"/>
+    </head>
+    <body>
+        <jsp:include page="../plantillas/navNuevoRegistro.jsp"/>
 
-    <jsp:include page="../plantillas/navNuevoRegistro.jsp"/>
+        <div class="container">
+            <div class="teal-text"><h3 align="center">Ingrese sus datos:</h3></div>
+            <br>
 
-    <div class="container">
-        <div class="teal-text"><h3 align="center">Ingrese sus datos:</h3></div>
-        <br>
-        <div class="col s12">
             <form action="Controller/nuevoUsuarioController.jsp" method="post">
                 <div class="row">
                     <div class="input-field col s4">
@@ -64,9 +65,9 @@
                 </div>
             </form>
         </div>
-    </div>
 
-    <jsp:include page="../plantillas/footerGeneral.jsp"/>
-    <script src="./Controller/functionNuevoRegistro.js"></script>
-    <jsp:include page="../plantillas/necesarioScripts.jsp"></jsp:include>
+        <jsp:include page="../plantillas/footerGeneral.jsp"/>
+        <script src="./Controller/functionNuevoRegistro.js"></script>
+        <jsp:include page="../plantillas/necesarioScripts.jsp"></jsp:include>
+    </body>
 </html>
