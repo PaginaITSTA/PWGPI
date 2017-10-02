@@ -17,7 +17,7 @@
         <a class="brand-logo">Gestión de proyectos informáticos</a>
         <ul class="right hide-on-med-and-down">
             <li><a href="../index.jsp">Inicio</a></li>
-            <li><a href="!#">Perfil</a></li>
+            <li><a href="../home/perfil.jsp">Perfil</a></li>
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-button" href="" data-activates="lista">Extras<i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="../index.jsp">Cerrar sesion</a></li>
