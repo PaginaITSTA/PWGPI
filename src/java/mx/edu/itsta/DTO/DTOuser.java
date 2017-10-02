@@ -6,12 +6,12 @@ package mx.edu.itsta.DTO;
  */
 public class DTOuser {
 
-    public String nombre;
-    public String apePaterno;
-    public String ApeMaterno;
-    public String Correo;
-    public String pass;
-    public String rePass;
+    public String nombre = "";
+    public String apePaterno = "";
+    public String ApeMaterno = "";
+    public String Correo = "";
+    public String pass = "";
+    public String rePass = "";
 
     public DTOuser(String nombre, String apePaterno, String ApeMaterno, String Correo, String pass, String rePass) {
         this.nombre = nombre;
@@ -20,6 +20,9 @@ public class DTOuser {
         this.Correo = Correo;
         this.pass = pass;
         this.rePass = rePass;
+    }
+
+    public DTOuser() {
     }
 
     public String getNombre() {
