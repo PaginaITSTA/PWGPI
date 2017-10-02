@@ -6,9 +6,9 @@ package mx.edu.itsta.DTO;
  */
 public class DTOLogin {
 
-    public String tipoUser;
-    public String correo;
-    public String pass;
+    public String tipoUser = "";
+    public String correo = "";
+    public String pass = "";
 
     public DTOLogin(String tipoUser, String correo, String pass) {
         this.tipoUser = tipoUser;
