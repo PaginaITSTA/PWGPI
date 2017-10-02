@@ -29,4 +29,13 @@ public class Controller {
         }
         return 0;
     }
+
+    public DTOuser datosUsuario() {
+        DTOuser user = new DTOuser();
+        user.setNombre("Raul");
+        user.setApePaterno("Saleta");
+        user.setApeMaterno("Guillermo");
+        user.setCorreo("RSaletaG@example.com");
+        return user;
+    }
 }
