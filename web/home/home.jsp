@@ -14,9 +14,9 @@
             rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
             crossorigin="anonymous">
         <link rel="stylesheet" href="css/navbar.css">
-        <title>Gestión de proyectos Informáticos</title>
+        <title>Gestión de Proyectos de Software</title>
 <!--=======-->
-        <title>Gestión de proyectos Informáticos</title>
+        <title>Gestión de Proyectos de Software</title>
 <<<<<<< HEAD
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <!-->>>>>>> ad6118ed62141ffe6d75a274c2eecd68ab43d01f-->

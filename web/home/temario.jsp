@@ -30,8 +30,7 @@
                 <tbody>
                     <tr>
                         <td class="m1 s12">1</td>
-                        <td class="m4 s12">Introducción a la ge
-                            stión de proyectos.</td>
+                        <td class="m4 s12">Introducción a la gestión de proyectos.</td>
                         <td class="m6 s12">
                             1.1. Conceptos básicos para la gestión de proyectos.<br>
                             <ul class="collapsible" data-collapsible="accordion">
