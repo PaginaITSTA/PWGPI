@@ -31,11 +31,14 @@ public class Controller {
     }
 
     public DTOuser datosUsuario() {
+        //Creando el objeto user
         DTOuser user = new DTOuser();
+        //LLenando el objeto user
         user.setNombre("Raul");
         user.setApePaterno("Saleta");
         user.setApeMaterno("Guillermo");
         user.setCorreo("RSaletaG@example.com");
+
         return user;
     }
 }

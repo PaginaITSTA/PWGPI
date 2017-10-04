@@ -10,15 +10,26 @@ public class DTOLogin {
     public String correo = "";
     public String pass = "";
 
+    public String error = "";
+    public int acceso = 0;
+
     public DTOLogin(String tipoUser, String correo, String pass) {
         this.tipoUser = tipoUser;
         this.correo = correo;
         this.pass = pass;
     }
 
+    public DTOLogin(String tipoUser, String correo, String pass, String error, int acceso) {
+        this.tipoUser = tipoUser;
+        this.correo = correo;
+        this.pass = pass;
+        this.error = error;
+        this.acceso = acceso;
+    }
+
     public DTOLogin() {
     }
-    
+
     public String getTipoUser() {
         return tipoUser;
     }
@@ -42,4 +53,21 @@ public class DTOLogin {
     public void setPass(String pass) {
         this.pass = pass;
     }
+
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
+
+    public int getAcceso() {
+        return acceso;
+    }
+
+    public void setAcceso(int acceso) {
+        this.acceso = acceso;
+    }
+
 }
