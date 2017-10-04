@@ -9,6 +9,7 @@
     <li><a href="#!">Tareas</a></li>
     <li class="divider"></li>
     <li><a href="#!">Apuntes</a></li>
+    <li><a href="../home/Controller/limpiarSession.jsp">cerrar sesion</a></li>
 </ul>
 
 <nav>
