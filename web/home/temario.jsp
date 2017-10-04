@@ -45,14 +45,6 @@
                                     </div>
                                 </li>
                             </ul>
-                            <!--
-                            1.2. Fases de la gestión de proyectos.<br>
-                            &emsp;1.2.1. Planificación de proyectos.<br>
-                            &emsp;1.2.2. Propuesta.<br>
-                            &emsp;1.2.3. Selección y Evaluación de personal.<br>
-                            &emsp;1.2.4. Supervisión y Revisión del proyecto.<br>
-                            &emsp;1.2.5. Informes.<br>
-                            -->
                             1.3 Fundamentos de Project Management Institute.</td>
                     </tr>
 
@@ -71,10 +63,6 @@
                                     </div>
                                 </li>
                             </ul>
-                            <!--
-                            &emsp;2.3.1 CMMI.<br>
-                            &emsp;2.3.2 MoProSoft.<br>
-                            -->
                             2.4 Impacto de la calidad en tiempo, costo y alcance del proyecto.<br>
                             2.5 Control del cambio.<br>
                     </tr>
@@ -87,11 +75,19 @@
                             3.2 Estimaciones de tiempo.<br>
                             3.3 Estimaciones de costos.<br>
                             3.4 Estimación de personal requerido.<br>
-                            3.5 Análisis de riesgos.<br>
-                            &emsp;3.5.1 Tipos de riesgos.<br>
-                            &emsp;3.5.2 Identificación, Impacto y proyección  del riesgo.<br>
-                            &emsp;3.5.3 Evaluación del riesgo.<br>
-                            &emsp;3.5.4 Estrategias frente al riesgo.<br>
+
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">3.5 Análisis de riesgos.<br></div>
+                                    <div class="collapsible-body">
+                                        &emsp;&emsp;3.5.1 Tipos de riesgos.<br>
+                                        &emsp;&emsp;3.5.2 Identificación, Impacto y proyección  del riesgo.<br>
+                                        &emsp;&emsp;3.5.3 Evaluación del riesgo.<br>
+                                        &emsp;&emsp;3.5.4 Estrategias frente al riesgo.<br>
+                                    </div>
+                                </li>
+                            </ul>
+
                             3.6 Análisis de la viabilidad del proyecto.<br>
                     </tr>
 
@@ -99,14 +95,28 @@
                         <td class="m1 s12">4</td>
                         <td class="m4 s12">Presentación de la información.</td>
                         <td class="m6 s12">
-                            4.1. Propuesta.<br>
-                            &emsp;4.1.1. Justificación del proyecto.<br>
-                            &emsp;4.1.2. Calendario de actividades.<br>
-                            &emsp;4.1.3. Personal involucrado.<br>
-                            &emsp;4.1.4. Políticas de comunicación y seguimiento.<br>
-                            4.2. Lineamientos de comunicación y seguimiento.<br>
-                            &emsp;4.2.1. Formatos.<br>
-                            &emsp;4.2.2. Herramientas.<br>
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">4.1. Propuesta.<br></div>
+                                    <div class="collapsible-body">
+                                        &emsp;&emsp;4.1.1. Justificación del proyecto.<br>
+                                        &emsp;&emsp;4.1.2. Calendario de actividades.<br>
+                                        &emsp;&emsp;4.1.3. Personal involucrado.<br>
+                                        &emsp;&emsp;4.1.4. Políticas de comunicación y seguimiento.<br>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">4.2. Lineamientos de comunicación y seguimiento.<br></div>
+                                    <div class="collapsible-body">
+                                        &emsp;&emsp;4.2.1. Formatos.<br>
+                                        &emsp;&emsp;4.2.2. Herramientas.<br>
+                                    </div>
+                                </li>
+                            </ul>
+
                             4.3. Contrato.<br>
                     </tr>
 
