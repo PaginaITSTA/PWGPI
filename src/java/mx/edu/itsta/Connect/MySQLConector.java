@@ -1,4 +1,4 @@
-package mx.edu.itsta.Controller;
+package mx.edu.itsta.Connect;
 
 /**
  *
