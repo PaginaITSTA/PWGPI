@@ -20,7 +20,7 @@
             <li><a href="../home/perfil.jsp">Perfil</a></li>
             <!-- Dropdown Trigger -->
             <li><a class="dropdown-button" href="" data-activates="lista">Extras<i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="../index.jsp">Cerrar sesion</a></li>
+            <li><a href="../home/Controller/limpiarSession.jsp">Cerrar sesion</a></li>
         </ul>
     </div>
 </nav>

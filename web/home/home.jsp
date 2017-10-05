@@ -120,10 +120,10 @@
             <div class="row">
                 <div class="col s12 m3">
                     <div class="card-panel teal">
-                        <span class="card-title white-text text-darken-4"><h5 align="center">Card Title</h5></span>
+                        <span class="card-title white-text text-darken-4"><h5 align="center">Documentos relacionados.</h5></span>
                         <div class="row">
-                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            <span class="white-text">Aenean sapien 
+                                odio, fermentum sit amet tristique id, varius id nibh. Etiam dui tellus, dictum eu placerat ac, rutrum eu felis.
                             </span>
                         </div>
                     </div>
@@ -131,10 +131,11 @@
 
                 <div class="col s12 m3">
                     <div class="card-panel teal">
-                        <span class="card-title white-text text-darken-4"><h5 align="center">Card Title</h5></span>
+                        <span class="card-title white-text text-darken-4"><h5 align="center">Contacto con el docente.</h5></span>
                         <div class="row">
-                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            <span class="white-text">Nullam tortor dolor, volutpat 
+                                id elit efficitur, dictum mollis turpis. In nisl enim, iaculis ac tincidunt non, scelerisque non enim. Aenean 
+                                rutrum, felis ac vehicula elementum, nunc dui congue libero, non vehicula diam metus ac velit. 
                             </span>
                         </div>
                     </div>
@@ -142,10 +143,11 @@
 
                 <div class="col s12 m3">
                     <div class="card-panel teal">
-                        <span class="card-title white-text text-darken-4"><h5 align="center">Card Title</h5></span>
+                        <span class="card-title white-text text-darken-4"><h5 align="center">Fuentes bibliográficas.</h5></span>
                         <div class="row">
-                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            <span class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis, libero quis 
+                                tempus viverra, nulla lacus ornare nibh, ac pretium elit sem ac mi. Quisque feugiat, neque sed fermentum 
+                                ullamcorper, diam diam venenatis tellus, eget porttitor nisi ligula et velit.  
                             </span>
                         </div>
                     </div>
@@ -153,10 +155,9 @@
 
                 <div class="col s12 m3">
                     <div class="card-panel teal">
-                        <span class="card-title white-text text-darken-4"><h5 align="center">Card Title</h5></span>
+                        <span class="card-title white-text text-darken-4"><h5 align="center">Calendario de actividades.</h5></span>
                         <div class="row">
-                            <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+                            <span class="white-text"> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
                             </span>
                         </div>
                     </div>

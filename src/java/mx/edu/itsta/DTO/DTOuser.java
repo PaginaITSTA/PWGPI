@@ -6,6 +6,7 @@ package mx.edu.itsta.DTO;
  */
 public class DTOuser {
 
+    public String idUser = "1";
     public String nombre = "Nombre default";
     public String apePaterno = "apePaterno default";
     public String ApeMaterno = "apeMaterno default";
@@ -14,6 +15,16 @@ public class DTOuser {
     public String rePass = "";
 
     public DTOuser(String nombre, String apePaterno, String ApeMaterno, String Correo, String pass, String rePass) {
+        this.nombre = nombre;
+        this.apePaterno = apePaterno;
+        this.ApeMaterno = ApeMaterno;
+        this.Correo = Correo;
+        this.pass = pass;
+        this.rePass = rePass;
+    }
+
+    public DTOuser(String id, String nombre, String apePaterno, String ApeMaterno, String Correo, String pass, String rePass) {
+        this.idUser = id;
         this.nombre = nombre;
         this.apePaterno = apePaterno;
         this.ApeMaterno = ApeMaterno;

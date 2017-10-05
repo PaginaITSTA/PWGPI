@@ -6,6 +6,14 @@
 
 <jsp:useBean class="mx.edu.itsta.DTO.DTOLogin" id="dtoLogin" scope="session"></jsp:useBean>
 
+<%
+    int acceso = dtoLogin.getAcceso();
+    
+    if (acceso == 1) {
+        response.sendRedirect("dashboard.jsp");
+    }
+%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
