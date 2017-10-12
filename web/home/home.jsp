@@ -41,82 +41,86 @@
             <!-- Inicio de la pagina -->
         <jsp:include page="../plantillas/navhome.jsp"/>
 
-
-        <!-- Slider de la página -->
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
-            <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
-            <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-            <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-            <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+        <!-- pallax to image -->
+        <div class="parallax-container">
+            <div class="parallax"><img src="../img/home.png"></div>
+            <div class="container">
+                <h1><p class="white-text center-align">Vienvenido a la materia de: <i>"Gestión del Proyectos Informaticos"</i></p></h1>
+            </div>
         </div>
-
 
         <div class="container">
 
 
             <!-- Texto que describe a la página -->
 
-            <h5 align="center">Referente a la página.</h5>
+            <h4><p class="center-align"><b>Referente a la página.</b></p></h5>
 
-            <ul class="collapsible" data-collapsible="accordion">
-                <li>
-                    <div class="collapsible-header">
-                        Mision
-                    </div>
-                    <div class="collapsible-body">
-                        <!-- Texto de la página -->
-                        <p>Ser una empresa con el mejor diseño, desarrollo y con la mejor
-                            solución tecnológica para los negocios de la Región, a través de calidad y
-                            confiabilidad.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="collapsible-header">
-                        Vision
-                    </div>
-                    <div class="collapsible-body">
-                        <!-- Texto de la página -->
-                        <p>Que no reconozcan mejor opción competitiva de Software Tecnológico para las
-                            empresas de la Región.</p>
-                    </div>
-                </li>
+                <ul class="collapsible #00897b teal darken-1" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header center-align #80cbc4 teal lighten-3">
+                            <b>Mision</b>
+                        </div>
+                        <div class="collapsible-body white-text">
+                            <!-- Texto de la página -->
+                            <p>Ser una empresa con el mejor diseño, desarrollo y con la mejor
+                                solución tecnológica para los negocios de la Región, a través de calidad y
+                                confiabilidad.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header center-align #80cbc4 teal lighten-3">
+                            <b>Vision</b>
+                        </div>
+                        <div class="collapsible-body white-text">
+                            <!-- Texto de la página -->
+                            <p>Que no reconozcan mejor opción competitiva de Software Tecnológico para las
+                                empresas de la Región.</p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div class="collapsible-header">
-                        Objetivo general
-                    </div>
-                    <div class="collapsible-body">
-                        <!-- Texto de la página -->
-                        <p>Desarrollar una página Web que brinde información de la materia de Gestión de
-                            Proyectos de Software a través de apuntes, materiales, tareas y actividades. Esto
-                            con la finalidad de que los estudiantes logren integrar todos los conocimientos
-                            adquiridos con respecto a otras materias.</p>
-                    </div>
-                </li>
+                    <li>
+                        <div class="collapsible-header center-align #80cbc4 teal lighten-3">
+                            <b>Objetivo general</b>
+                        </div>
+                        <div class="collapsible-body white-text">
+                            <!-- Texto de la página -->
+                            <p>Desarrollar una página Web que brinde información de la materia de Gestión de
+                                Proyectos de Software a través de apuntes, materiales, tareas y actividades. Esto
+                                con la finalidad de que los estudiantes logren integrar todos los conocimientos
+                                adquiridos con respecto a otras materias.</p>
+                        </div>
+                    </li>
 
-                <li>
-                    <div class="collapsible-header">
-                        Objetivos específicos.
-                    </div>
-                    <div class="collapsible-body">
-                        <!-- Texto de la página -->
-                        <p>&bull; Investigar las necesidades del cliente. <br>
-                            &bull; Analizar la información para saber cuáles son los puntos más importantes
-                            del desarrollo de la página.
-                            <br>
-                            &bull; Diseñar la base de datos y los módulos de la página con la finalidad de
-                            obtener los modelos de datos.
-                            <br>
-                            &bull; Crear el diseño de la página Web y realizar la codificación.
-                            <br>
-                            &bull; Verificar y detectar los errores.
-                            <br>
-                            &bull; Implementación de la página Web.</p>
-                    </div>
-                </li>
-            </ul>
+                    <li>
+                        <div class="collapsible-header center-align #80cbc4 teal lighten-3">
+                            <b>Objetivos específicos.</b>
+                        </div>
+                        <div class="collapsible-body white-text">
+                            <!-- Texto de la página -->
+                            <p>&bull; Investigar las necesidades del cliente. <br>
+                                &bull; Analizar la información para saber cuáles son los puntos más importantes
+                                del desarrollo de la página.
+                                <br>
+                                &bull; Diseñar la base de datos y los módulos de la página con la finalidad de
+                                obtener los modelos de datos.
+                                <br>
+                                &bull; Crear el diseño de la página Web y realizar la codificación.
+                                <br>
+                                &bull; Verificar y detectar los errores.
+                                <br>
+                                &bull; Implementación de la página Web.</p>
+                        </div>
+                    </li>
+                </ul>
+        </div>
 
+        <!-- Slider de la página -->
+        <div class="parallax-container">
+            <div class="parallax"><img src="../img/proyectos.jpg"></div>
+        </div>
+
+        <div class="container">
             <div class="row">
                 <div class="col s12 m3">
                     <div class="card-panel teal">
