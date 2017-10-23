@@ -5,8 +5,8 @@
             <div class="col l6 s12">
                 <h5 class="white-text">ITSTA</h5>
                 <p class="grey-text text-lighten-4">
-                    Desarrollado bajo petición de la facultad de ingeniería en sistemas computacionales, para la materia:
-                    "Gestión de proyectos informáticos"
+                    Desarrollado bajo petición de la facultad de Ingeniería en Sistemas Computacionales, para la materia:
+                    "Gestión de Proyectos de Software"
                 </p>
             </div>
 

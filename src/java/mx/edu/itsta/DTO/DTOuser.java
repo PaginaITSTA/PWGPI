@@ -11,7 +11,7 @@ public class DTOuser {
     public String apePaterno = "apePaterno default";
     public String ApeMaterno = "apeMaterno default";
     public String Correo = "e mail default";
-    public String pass = "pass defauld";
+    public String pass = "pass default";
     public String rePass = "";
 
     public DTOuser(String nombre, String apePaterno, String ApeMaterno, String Correo, String pass, String rePass) {
