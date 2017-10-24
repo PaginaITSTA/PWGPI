@@ -9,30 +9,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Bootstrap -->
-<%-- <<<<<<< HEAD
-<<<<<<< HEAD--%>
-        <link 
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-            rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="css/navbar.css">
         <title>Gestión de Proyectos de Software</title>
-<!--=======-->
-        <title>Gestión de Proyectos de Software</title>
-<%--<<<<<<< HEAD--%>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<%--<!-->>>>>>> ad6118ed62141ffe6d75a274c2eecd68ab43d01f-->--%>
-<%--=======--%>
-        
-        <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
-<%-->>>>>>> ca78e2b42b48472c8229c10e691762359cd20b29--%>
-    </head>
-<%--=======--%>
-
-        <title>Gestión de Proyectos de Software</title>
-<%-->>>>>>> 7b07b036d4e2d1f64636a0cda8a901a472e5e6b1--%>
-
 
         <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
         </head>
@@ -47,7 +24,7 @@
         <div class="parallax-container">
             <div class="parallax"><img src="../img/home.png"></div>
             <div class="container">
-                <h1><p class="white-text center-align">Vienvenido a la materia de: <i>"Gestión del Proyectos Informaticos"</i></p></h1>
+                <h1><p class="white-text center-align">Bienvenido a la materia de: <i>"Gestión del Proyectos Informaticos"</i></p></h1>
             </div>
         </div>
 
@@ -61,7 +38,7 @@
                 <ul class="collapsible #00897b teal darken-1" data-collapsible="accordion">
                     <li>
                         <div class="collapsible-header center-align #80cbc4 teal lighten-3">
-                            <b>Mision</b>
+                            <b>Misión</b>
                         </div>
                         <div class="collapsible-body white-text">
                             <!-- Texto de la página -->
@@ -72,7 +49,7 @@
                     </li>
                     <li>
                         <div class="collapsible-header center-align #80cbc4 teal lighten-3">
-                            <b>Vision</b>
+                            <b>Visión</b>
                         </div>
                         <div class="collapsible-body white-text">
                             <!-- Texto de la página -->
