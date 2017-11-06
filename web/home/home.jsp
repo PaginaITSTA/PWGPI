@@ -22,9 +22,7 @@
         <div class="parallax-container">
             <div class="parallax"><img src="../img/home.png"></div>
             <div class="container">
-
                 <h1><p class="white-text center-align">Bienvenido a la materia de: <i>"Gestión del Proyectos Informaticos"</i></p></h1>
-                
             </div>
         </div>
 
@@ -47,6 +45,8 @@
                     </li>
                     <li>
 
+                        <div class="collapsible-header center-align #80cbc4 teal lighten-3">
+                            <b>Visión</b>
                         </div>
                         <div class="collapsible-body white-text">
                             <!-- Texto de la página -->
@@ -85,40 +85,15 @@
                                 <br>
                                 &bull; Verificar y detectar los errores.
                                 <br>
-                                &bull; Implementación de la página Web.</p>--%>
+                                &bull; Implementación de la página Web.</p>
                         </div>
                     </li>
                 </ul>
         </div>
 
-        <!-- Slider de la página -->
         <div class="parallax-container">
-            <div class="parallax"><img src="../img/"></div>
-            
+            <div class="parallax"><img src="../img/proyectos.jpg"/></div>
         </div>
-      <%--  <div class="parallax-container">
-            <!--Slider-->
-            <%--<section id="miSlide" class="carousel slide">
-                <ol class="carousel-indicators">
-                    <li data-target="#miSlide" data-slide-to="0" class="active"></li>
-                    <li data-target="#miSlide" data-slide-to="1"></li>
-                    <li data-target="#miSlide" data-slide-to="2"></li>
-                </ol>
-
-                <div class="parallax">
-                    <div class="item active">
-                        <img src="../img/logoTwitter.png">--%>
-                        <%-- </div>--%>
-                    <%--<div class="item">--%>
-                    <%--<img src="../img/proyectos.jpg" class="adaptar">--%>
-                        <%--</div>
-            </div>--%>
-            <%--<a href="#miSlide" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-                <a href="#miSlide" class="right caurosel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </section><br>--%>
-            
-                
-       
 
        <!-- footer de la pagina -->
         <jsp:include page="../plantillas/footerHome.jsp"/>
