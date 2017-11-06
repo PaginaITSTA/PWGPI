@@ -9,26 +9,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-<<<<<<< HEAD
-        <!-- Bootstrap -->
-
-        <link 
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
-            rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="css/navbar.css">
-        <title>Gestión de Proyectos de Software</title>
-        <title>Gestión de Proyectos de Software</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-        <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
-
-    </head>
-
-        <title>Gestión de Proyectos de Software</title>
-=======
         <title>Gestión de Proyectos de Software</title>
 
->>>>>>> a04c3e15d362ac5bc970feb052cfa2d34f6f2777
         <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
         </head>
 
@@ -40,11 +22,9 @@
         <div class="parallax-container">
             <div class="parallax"><img src="../img/home.png"></div>
             <div class="container">
-<<<<<<< HEAD
-                <h1><p class="white-text center-align">Bienvenido a la materia de: <i>"Gestión de Proyectos de Software"</i></p></h1>
-=======
+
                 <h1><p class="white-text center-align">Bienvenido a la materia de: <i>"Gestión del Proyectos Informaticos"</i></p></h1>
->>>>>>> a04c3e15d362ac5bc970feb052cfa2d34f6f2777
+                
             </div>
         </div>
 
@@ -55,11 +35,7 @@
             <ul class="collapsible #00897b teal darken-1" data-collapsible="accordion">
                     <li>
                         <div class="collapsible-header center-align #80cbc4 teal lighten-3">
-<<<<<<< HEAD
-                            <b>Referente a la página.</b>
-=======
                             <b>Misión</b>
->>>>>>> a04c3e15d362ac5bc970feb052cfa2d34f6f2777
                         </div>
                         <div class="collapsible-body white-text">
                             <!-- Texto de la página -->
@@ -70,13 +46,7 @@
                         </div>
                     </li>
                     <li>
-<<<<<<< HEAD
-                        <%--<div class="collapsible-header center-align #80cbc4 teal lighten-3">
-                            <b>Vision</b>
-=======
-                        <div class="collapsible-header center-align #80cbc4 teal lighten-3">
-                            <b>Visión</b>
->>>>>>> a04c3e15d362ac5bc970feb052cfa2d34f6f2777
+
                         </div>
                         <div class="collapsible-body white-text">
                             <!-- Texto de la página -->
@@ -145,7 +115,7 @@
             </div>--%>
             <%--<a href="#miSlide" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
                 <a href="#miSlide" class="right caurosel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-</section><br>--%>
+    </section><br>--%>
             
                 
        
