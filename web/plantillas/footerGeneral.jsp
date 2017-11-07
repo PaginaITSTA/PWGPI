@@ -18,7 +18,7 @@
                         </a>
                     </li>
                     <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/ITSTantoyuca/" target="_blank">
-                            <img src="../img/logoFacebook.png" height="30" width="30">  Facebook
+                            <img src="../img/logoFace.png" height="30" width="30">  Facebook
                         </a>
                     </li>
                     <li><a class="grey-text text-lighten-3" href="https://twitter.com/itsta_tweet" target="blank">
