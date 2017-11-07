@@ -4,15 +4,22 @@
     Author     : Clair
 --%>
 
+<%@page import="mx.edu.itsta.Connect.Conexion"%>
 <jsp:useBean class="mx.edu.itsta.DTO.DTOLogin" id="dtoLogin" scope="session"></jsp:useBean>
 
 <%
+    Conexion conexion = new Conexion();
     int acceso = dtoLogin.getAcceso();
-
+        
     if (acceso == 1) {
-        response.sendRedirect("dashboard.jsp");
+        
+           response.sendRedirect("dashboard.jsp");
+    }else{
+   
+     
     }
 %>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -41,7 +48,7 @@
                     <div class="card #00897b teal darken-1">
                         <form action="Controller/loginController.jsp" method="post">
                             <div class="card-content white-text">
-                                <span class="card-title">Ingrese por favor.</span>
+                                <span class="card-title">Ingrese para entrar</span>
 
                                 <div class="input-field">
                                     <div class="row">
@@ -76,7 +83,7 @@
                                 </div>
 
                                 <div class="col m6 s12 card-action right-align">
-                                    <input class="waves-effect btn #0d47a1 blue darken-4" type="submit" value="Ingresar">
+                                    <input class="waves-effect btn #0d47a1 blue darken-4" type="submit" name="btnIngresar" value="Ingresar">
                                 </div>
                             </div>
                             <!-- end buttons -->
@@ -89,7 +96,6 @@
     </div>
 
     <jsp:include page="../plantillas/footerGeneral.jsp"/>
-
     <jsp:include page="../plantillas/necesarioScripts.jsp"/>
 
 </html>
