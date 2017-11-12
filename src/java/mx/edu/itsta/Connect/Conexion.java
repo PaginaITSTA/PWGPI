@@ -33,7 +33,7 @@ public class Conexion{
         this.ConectaraSQL();
     }
     
-    public void ConectaraSQL() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+    public void ConectaraSQL()  {
      System.out.println("conecta");
     try{
         Class.forName("com.mysql.jdbc.Driver");

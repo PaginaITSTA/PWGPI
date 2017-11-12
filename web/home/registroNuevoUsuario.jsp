@@ -4,8 +4,14 @@
     Author     : Clair
 --%>
 
+<%@page import="mx.edu.itsta.DTO.DTOPersona"%>
+<%@page import="mx.edu.itsta.Connect.Conexion"%>
 <jsp:useBean class="mx.edu.itsta.DTO.DTOuser" id="DTOUser" scope="session"></jsp:useBean>
 
+<%
+  
+ 
+%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

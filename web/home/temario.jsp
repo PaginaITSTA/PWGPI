@@ -13,8 +13,10 @@
         <jsp:include page="../plantillas/necesarioParaPw.jsp"/>
     </head>
     <body>
+        
         <jsp:include page="../plantillas/navLogin.jsp"/>
-
+        <%--<img src="../img/paraFondo.jpg">--%>
+        
         <div class="container">
             <!-- Tabla de contenido de la materia -->
             <br><br>

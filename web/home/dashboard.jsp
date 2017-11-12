@@ -23,10 +23,10 @@
         %>
         <jsp:include page="../plantillas/navDashAlumno.jsp"/>
 
-        <h1>-----------</h1>
-        <h1 align="center">Wellcome to the dashboard</h1>
+        <h1></h1>
+        <%--<h1 align="center">Wellcome to the dashboard</h1>
         <h2 align="center">To Alumno</h2>
-        <h2 align="center">Kinds of user</h2>
+        <h2 align="center">Kinds of user</h2>--%>
 
         <%
         } else if (tipoUsuario.equals("Encargado")) {

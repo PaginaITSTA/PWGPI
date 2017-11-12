@@ -4,25 +4,25 @@ package mx.edu.itsta.DTO;
  *
  * @author Yaquiii
  */
-public class DTOUsuario {
-    private int id_empleado;
+public class DTOUsuario extends ModelosDTO{
+    private int id_usuario;
     private String correo;
     private String contraseña;
     private DTOPersona DatosPersona;
     private int tipo_user;
 
     /**
-     * @return the id_empleado
+     * @return the id_usuario
      */
-    public int getId_empleado() {
-        return id_empleado;
+    public int getId_usuario() {
+        return id_usuario;
     }
 
     /**
-     * @param id_empleado the id_empleado to set
+     * @param id_usuario the id_usuario to set
      */
-    public void setId_empleado(int id_empleado) {
-        this.id_empleado = id_empleado;
+    public void setId_Usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
     /**

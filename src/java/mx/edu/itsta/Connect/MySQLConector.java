@@ -1,45 +1,55 @@
-package mx.edu.itsta.Connect;
 
-import java.sql.Connection;
+package mx.edu.itsta.Connect;
+import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-
-public class MySQLConector{
-   static String bd = "bd_materia";
-    static String login = "root";
-    static String password = "";
-    static String port ="3306";
-    static String url = "jdbc:mysql://localhost/:"+port+"/"+bd;
-    
-    Connection conn = null;
-    
-     public MySQLConector(String login, String password) {
-        this.login = "root";
-        this.password = "";
+/**
+ *
+ * @author Yaquiii
+ */
+public class MySQLConector {
+    public MySQLConector(){
     }
     
-    public void ConectaraSQL() {
-     System.out.println("conecta");
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            //obtenemos la conexión
-            conn = DriverManager.getConnection(url,login,password);
-            
-            if (conn != null) {
-                System.out.println("[MYSQL] Conexión a base de datos ");
-            }
-            }catch (SQLException | ClassNotFoundException e) {
-            System.out.println("[MYSQL] Conexión a la base de datos " + bd + ".....FAILED");
-            System.out.println(e.toString());
-        }
-    }
-   
-
-    public Connection getConnection() {
-      return conn;
-    }
-    
-    public void desconectar() {
-        conn = null;
-    }
+    public void ConectarASQL() {
+     /*private String url = "jdbc:mysql://localhost/feedback?";
+    private final String user = "root";
+     private String password = "erick";
+     private Connection con = null;
+  
+     //Aquí debe de regresar la conección
+     public Connection getConnection() {
+         try {
+             Class.forName("com.mysql.jdbc.Driver");
+            // con = DriverManager.getConnection(url, user, password);
+         } catch (ClassNotFoundException e) {
+             System.out.println("Error de Driver");
+         } catch (SQLException e2) {
+             System.out.println("Un error con la base de datos");
+         }
+         return this.con;
+      }
+  
+     //Aquí debe de regresar la conección
+     public void getConnection(){
+     }
+     public void cerrarConnection() throws SQLException {
+         if (this.con != null) {
+             this.con.close();
+         }
+     }
+  
+     /*       
+     
+     public void cerrarConnection() throws SQLException{
+         if (this.con!=null) {
+             this.con.close();
+         }
+      }
+ 
+     public conexion(){}
+     
+     
+      */
+  }
 }

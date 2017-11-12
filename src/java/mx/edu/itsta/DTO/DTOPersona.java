@@ -4,7 +4,7 @@ package mx.edu.itsta.DTO;
  *
  * @author Yaquiii
  */
-public class DTOPersona {
+public class DTOPersona extends ModelosDTO {
     private int id_persona;
     private String nombre;
     private String ApellidoP;

@@ -9,12 +9,12 @@
     <li class="divider"></li>
     <li><a href="#!">Actividades</a></li>
     <li><a href="#!">Apuntes</a></li>
-    <li><a href="#!">Tareas</a></li>    
+    <li><a href="#!">Materiales</a></li>    
 </ul>
 
 <nav>
     <div class="nav-wrapper #1565c0 blue darken-3">
-        <a class="brand-logo">Gestión de proyectos informáticos</a>
+        <a class="brand-logo">Gestión de Proyectos de Software</a>
         <ul class="right hide-on-med-and-down">
             <li><a href="../index.jsp">Inicio</a></li>
             <li><a href="../home/perfil.jsp">Perfil</a></li>
@@ -24,3 +24,4 @@
         </ul>
     </div>
 </nav>
+
