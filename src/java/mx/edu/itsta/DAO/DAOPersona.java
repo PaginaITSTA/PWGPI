@@ -1,10 +1,8 @@
 
 package mx.edu.itsta.DAO;
 
-import java.sql.CallableStatement;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import mx.edu.itsta.Connect.Conexion;
 import mx.edu.itsta.Controller.Controller;
 import mx.edu.itsta.DTO.DTOPersona;
 import mx.edu.itsta.DTO.ModelosDTO;

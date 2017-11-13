@@ -1,13 +1,17 @@
-
 package mx.edu.itsta.DAO;
 
 import java.sql.CallableStatement;
+import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import mx.edu.itsta.Connect.Conexion;
 import mx.edu.itsta.Controller.Controller;
+import mx.edu.itsta.DTO.DTOLogin;
 import mx.edu.itsta.DTO.DTOUsuario;
 import mx.edu.itsta.DTO.ModelosDTO;
 
@@ -15,14 +19,14 @@ import mx.edu.itsta.DTO.ModelosDTO;
  *
  * @author Yaquiii
  */
-public class DAOUsuario implements ModelosDAO{
-private Controller controlador;
+public class DAOUsuario implements ModelosDAO {
 
-    public DAOUsuario(Controller Controller) {
-        this.controlador = Controller;
+    Connection conn = null;
+    Statement sql = null;
+
+    public DAOUsuario() {
     }
-    
-    @Override
+
     public int Agregar(ModelosDTO dto) throws SQLException {
         /*Conexion conn = new Conexion();
         conn.getConnection().setAutoCommit(false);
@@ -59,29 +63,43 @@ private Controller controlador;
     public ArrayList<ModelosDTO> Listar() throws SQLException {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
-    public boolean validarUsuario(String correo, String passwd) throws SQLException {
-        /*Conexion conec = new Conexion();
-        PreparedStatement con = conec.getConnection().prepareStatement("Select verificarLogin (?,?) as login");
 
-        con.setString(1, correo);
-        con.setString(2, passwd);
+    public int validarUsuario(DTOLogin login) throws SQLException {
+        int i = 0;
+        //La operacion que se debe de ejecutar es: select bd_materia.verificarLogin('mail', 'pass');
+        Conexion con;
+        try {
+            con = new Conexion();
+            conn = con.getConnection();
 
-        System.out.println("[MYSQL ] SELECT  verificarLogin (?,?) as login {" + correo + ":" + passwd + "}");
+            boolean encontrado = false;
 
-        ResultSet res = con.executeQuery();
-        if (res.next()) {
-            if (res.getInt("login") == 1) {
-                conec.desconectar();
-                return true;
-            } else {
-                conec.desconectar();
-                return false;
+            con.ConectaraSQL();
+            sql = conn.createStatement();
+
+            ResultSet rs = sql.executeQuery("select bd_materia.verificarLogin('" + login.getCorreo() + "', '" + login.getPass() + "') as resultado;");
+
+            //Nos va a regresar un 1 si pasa y un 0 si es que no pasa
+            while (rs.next()) {
+                System.out.println("El resultado original del rs es: " + rs.getString("resultado"));
+
+                i = Integer.parseInt(rs.getString("resultado"));
+                System.out.println("El valor de i es: " + i);
+
             }
+
+            con.desconectar();
+            return i;
+
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(DAOUsuario.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            Logger.getLogger(DAOUsuario.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            Logger.getLogger(DAOUsuario.class.getName()).log(Level.SEVERE, null, ex);
         }
-        conec.desconectar();*/
-        return false;
+
+        return i;
     }
-    
+
 }
