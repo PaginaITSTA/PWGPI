@@ -10,11 +10,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Temario</title>
-        <jsp:include page="../plantillas/necesarioParaPw.jsp"/>
+        <jsp:include page="../plantillas/necesarioParaPw"/>
     </head>
     <body>
         
-        <jsp:include page="../plantillas/navLogin.jsp"/>
+        <jsp:include page="../plantillas/navLogin"/>
         <%--<img src="../img/paraFondo.jpg">--%>
         
         <div class="container">
@@ -135,8 +135,8 @@
         </div>
         <br><br><br>
 
-        <jsp:include page="../plantillas/footerGeneral.jsp"/>
+        <jsp:include page="../plantillas/footerGeneral"/>
 
-        <jsp:include page="../plantillas/necesarioScripts.jsp"/>
+        <jsp:include page="../plantillas/necesarioScripts"/>
     </body>
 </html>

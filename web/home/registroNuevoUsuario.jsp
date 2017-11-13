@@ -20,10 +20,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registro de un nuevo usuario</title>
 
-        <jsp:include page="../plantillas/necesarioParaPw.jsp"/>
+        <jsp:include page="../plantillas/necesarioParaPw"/>
     </head>
     <body>
-        <jsp:include page="../plantillas/navNuevoRegistro.jsp"/>
+        <jsp:include page="../plantillas/navNuevoRegistro"/>
 
         <div class="container">
             <div class="teal-text"><h3 align="center">Ingrese sus datos:</h3></div>
@@ -72,8 +72,8 @@
             </form>
         </div>
 
-        <jsp:include page="../plantillas/footerGeneral.jsp"/>
+        <jsp:include page="../plantillas/footerGeneral"/>
         <script src="./Controller/functionNuevoRegistro.js"></script>
-        <jsp:include page="../plantillas/necesarioScripts.jsp"></jsp:include>
+        <jsp:include page="../plantillas/necesarioScripts"></jsp:include>
     </body>
 </html>

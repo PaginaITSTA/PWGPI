@@ -9,9 +9,9 @@
     
     if (validacion == 1) {
         dtoLogin.setAcceso(1);
-        response.sendRedirect("../dashboard.jsp");
+        response.sendRedirect("../dashboard");
     } else {
-        response.sendRedirect("../login.jsp");
+        response.sendRedirect("../login");
     }
 
 //response.sendRedirect("../dashboard.jsp");

@@ -9,11 +9,11 @@
                 int acceso = dtoLogin.getAcceso();
                 if (acceso == 1) {
             %>
-            <li><a href="../home/dashboard.jsp">Salir</a></li>
+            <li><a href="../home/dashboard">Salir</a></li>
                 <%
                 } else {
                 %>
-            <li><a href="../home/home.jsp">Salir</a></li>
+            <li><a href="../home/home">Salir</a></li>
 
             <%
                 }

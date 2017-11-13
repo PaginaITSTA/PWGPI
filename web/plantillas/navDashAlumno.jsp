@@ -16,9 +16,9 @@
     <div class="nav-wrapper #1565c0 blue darken-3">
         <a class="brand-logo">Gestión de Proyectos de Software</a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="../index.jsp">Inicio</a></li>
-            <li><a href="../home/login.jsp">Información General</a></li>
-            <li><a href="../home/temario.jsp">Temario</a></li>
+            <li><a href="../index">Inicio</a></li>
+            <li><a href="../home/login">Información General</a></li>
+            <li><a href="../home/temario">Temario</a></li>
                        <!-- Dropdown Trigger -->
             <li><a class="dropdown-button" href="" data-activates="lista">Más<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
@@ -29,7 +29,7 @@
     <div class="parallax-container">
             <div class="parallax"><img src="../img/alumn.jpg"></div>
             <div class="container">
-                 <h1><p class="white-text center-align"></p></h1>
+                <h1><p class="white-text center-align"></p></h1>
             </div>
         
             <div class="row">
