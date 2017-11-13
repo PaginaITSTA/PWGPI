@@ -4,23 +4,24 @@ package mx.edu.itsta.Controller;
  *
  * @author Clair
  */
-//Para importar los objetos que van a transportar la informacion.   
+//Para importar los objetos que van a transportar la informacion.
 import java.sql.SQLException;
+import mx.edu.itsta.Bussines.Bussines;
 import mx.edu.itsta.DTO.DTOLogin;
 import mx.edu.itsta.DTO.DTOuser;
 
 public class Controller {
 
-    /**
-     *
-     * @param dataUser
-     * @return
-     */
-    public int validateUser(DTOLogin dataUser) {
-        if (dataUser.getPass().equals("1")) {
-            return 1;
-        }
-        return 0;
+    Bussines MyBuss = new Bussines();
+
+    //Debe de retornar 1 en caso de ser correcto el acceso y cero en caso de no serlo.
+    public int validateUser(DTOLogin dataUser) throws SQLException {
+
+        return MyBuss.validUser(dataUser);
+//        if (dataUser.getPass().equals("1")) {
+//            return 1;
+//        }
+//        return 0;
     }
 
     /*public int verificarLogin(DTOLogin dataLogin) throws SQLException {
@@ -31,10 +32,9 @@ public class Controller {
             return 1;
         }
     }*/
-    /*public int validaConexion(Conexion ){
+ /*public int validaConexion(Conexion ){
     
     }*/
-    
     public int nuevoUsuario(DTOuser user) {
         String ape = user.getNombre();
         if (ape.length() > 0) {
@@ -54,7 +54,7 @@ public class Controller {
 
         return user;
     }
-    
+
     /*public boolean verificarIngreso(String pusuario, String ppasswd) throws SQLException {
         if (empleado.validarIngreso(pusuario, ppasswd)) {
             usuarioSistema = pusuario;
@@ -64,5 +64,4 @@ public class Controller {
             return false;
         }
     }*/
-
 }
