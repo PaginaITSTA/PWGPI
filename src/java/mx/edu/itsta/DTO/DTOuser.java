@@ -8,27 +8,27 @@ public class DTOuser {
 
     public String idUser = "1";
     public String nombre = "Nombre default";
-    public String apePaterno = "apePaterno default";
-    public String ApeMaterno = "apeMaterno default";
-    public String Correo = "e mail default";
+    public String apePaterno = "apePaterno";
+    public String apeMaterno = "apeMaterno";
+    public String correo = "e mail default";
     public String pass = "pass default";
     public String rePass = "";
 
-    public DTOuser(String nombre, String apePaterno, String ApeMaterno, String Correo, String pass, String rePass) {
+    public DTOuser(String nombre, String apePaterno, String apeMaterno, String Correo, String pass, String rePass) {
         this.nombre = nombre;
         this.apePaterno = apePaterno;
-        this.ApeMaterno = ApeMaterno;
-        this.Correo = Correo;
+        this.apeMaterno = apeMaterno;
+        this.correo = Correo;
         this.pass = pass;
         this.rePass = rePass;
     }
 
-    public DTOuser(String id, String nombre, String apePaterno, String ApeMaterno, String Correo, String pass, String rePass) {
+    public DTOuser(String id, String nombre, String apePaterno, String apeMaterno, String Correo, String pass, String rePass) {
         this.idUser = id;
         this.nombre = nombre;
         this.apePaterno = apePaterno;
-        this.ApeMaterno = ApeMaterno;
-        this.Correo = Correo;
+        this.apeMaterno = apeMaterno;
+        this.correo = Correo;
         this.pass = pass;
         this.rePass = rePass;
     }
@@ -53,19 +53,19 @@ public class DTOuser {
     }
 
     public String getApeMaterno() {
-        return ApeMaterno;
+        return apeMaterno;
     }
 
-    public void setApeMaterno(String ApeMaterno) {
-        this.ApeMaterno = ApeMaterno;
+    public void setApeMaterno(String apeMaterno) {
+        this.apeMaterno = apeMaterno;
     }
 
     public String getCorreo() {
-        return Correo;
+        return correo;
     }
 
     public void setCorreo(String Correo) {
-        this.Correo = Correo;
+        this.correo = Correo;
     }
 
     public String getPass() {
