@@ -33,23 +33,21 @@ public class Conexion {
      * Constructor que establece la conexión con el usuario por default (root o
      * administrador)
      */
-    
     public Conexion() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         Conexion.login = "root";
         Conexion.password = "erick";
         this.ConectaraSQL();
     }
 
-    public void ConectaraSQL() {
-        System.out.println("conecta");
+    public void ConectaraSQL() throws SQLException {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             conn = (Connection) DriverManager.getConnection(url, login, password);
             sql = conn.createStatement();
-            System.out.print("conexion establecida");
-        } catch (Exception e) {
-            System.out.print("Error en la conexion" + e);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
         }
+
     }
 
     public Connection getConnection() {
@@ -80,29 +78,24 @@ public class Conexion {
         }
         return encontrado;
     }
-    
+
     /**
-     * 
-    *public static void main(String[] args) throws SQLException {
-    *    try {
-    *        //Solo se conecta            
-    *        Conexion con = new Conexion();
-    *        
-    *        DTOPersona per = new DTOPersona();
-    *        per.setId_persona(15);
-    *        per.setNombre("Usuario2");
-    *        per.setApellidoP("ApellidoP");
-    *        per.setApellidoM("ApellidoM");
-    *        
-    *        System.out.println("Resultado es: " + con.ingreso_datos(per));
-    *        
-    *    } catch (ClassNotFoundException ex) {
-    *        Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
-    *    } catch (InstantiationException ex) {
-    *        Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
-    *    } catch (IllegalAccessException ex) {
-    *        Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
-    *    }
-    *}
-    */
+     *
+     * public static void main(String[] args) throws SQLException { try { //Solo
+     * se conecta Conexion con = new Conexion();
+     *
+     * DTOPersona per = new DTOPersona(); per.setId_persona(15);
+     * per.setNombre("Usuario2"); per.setApellidoP("ApellidoP");
+     * per.setApellidoM("ApellidoM");
+     *
+     * System.out.println("Resultado es: " + con.ingreso_datos(per));
+     *
+     * } catch (ClassNotFoundException ex) {
+     * Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex); }
+     * catch (InstantiationException ex) {
+     * Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex); }
+     * catch (IllegalAccessException ex) {
+     * Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex); }
+     * }
+     */
 }
