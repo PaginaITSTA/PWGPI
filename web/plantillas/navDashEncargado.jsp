@@ -5,7 +5,7 @@
 --%>
 
 <ul id="lista" class="dropdown-content">
-    <li><a href="../home/temario.jsp">Temario</a></li>
+    <li><a href="../home/temario">Temario</a></li>
     <li class="divider"></li>
     <li><a href="#!">Actividades</a></li>
     <li><a href="#!">Apuntes</a></li>

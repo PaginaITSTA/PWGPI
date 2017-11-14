@@ -9,7 +9,7 @@
     <li><a href="#!">Materiales</a></li>
     <li class="divider"></li>
     <li><a href="#!">Apuntes</a></li>
-    <li><a href="../home/Controller/limpiarSession.jsp">Cerrar Sesión</a></li>
+    <li><a href="../home/Controller/limpiarSession">Cerrar Sesión</a></li>
 </ul>
 
 <nav>
