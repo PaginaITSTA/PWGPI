@@ -29,7 +29,7 @@
             <div class="teal-text"><h3 align="center">Ingrese sus datos:</h3></div>
             <br>
 
-            <form action="Controller/nuevoUsuarioController.jsp" method="post">
+            <form action="Controller/nuevoUsuarioController" method="post">
                 <div class="row">
                     <div class="input-field col s4">
                         <input name="nombre" class="active" id="nombre" type="text" required="">

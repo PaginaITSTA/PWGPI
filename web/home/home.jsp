@@ -11,12 +11,12 @@
     <head>
         <title>Gestión de Proyectos de Software</title>
 
-        <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
+        <jsp:include page="../plantillas/necesarioParaPw"></jsp:include>
         </head>
 
         <body>
             <!-- Inicio de la pagina -->
-        <jsp:include page="../plantillas/navhome.jsp"/>
+        <jsp:include page="../plantillas/navhome"/>
 
         <!-- pallax to image -->
         <div class="parallax-container">
@@ -97,7 +97,7 @@
 
        <!-- footer de la pagina -->
         <jsp:include page="../plantillas/footerHome.jsp"/>
-        <jsp:include page="../plantillas/necesarioScripts.jsp"/>
+        <jsp:include page="../plantillas/necesarioScripts"/>
     </body>
 
 </html>

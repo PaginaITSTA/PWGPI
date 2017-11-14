@@ -13,7 +13,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Dashboard</title>
 
-        <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
+        <jsp:include page="../plantillas/necesarioParaPw"></jsp:include>
         </head>
         <body>
         <%
@@ -21,7 +21,7 @@
 
             if (tipoUsuario.equals("Alumno")) {
         %>
-        <jsp:include page="../plantillas/navDashAlumno.jsp"/>
+        <jsp:include page="../plantillas/navDashAlumno"/>
 
         <h1></h1>
         <%--<h1 align="center">Wellcome to the dashboard</h1>
@@ -31,7 +31,7 @@
         <%
         } else if (tipoUsuario.equals("Encargado")) {
         %>
-        <jsp:include page="../plantillas/navDashEncargado.jsp"/>
+        <jsp:include page="../plantillas/navDashEncargado"/>
 
         <h1>-----------</h1>
         <h1 align="center">Wellcome to the dashboard</h1>
@@ -41,7 +41,7 @@
         <%
         } else if (tipoUsuario.equals("Administrador")) {
         %>
-        <jsp:include page="../plantillas/navDashAdministrador.jsp"/>
+        <jsp:include page="../plantillas/navDashAdministrador"/>
         
         <h1>-----------</h1>
         <h1 align="center">Wellcome to the dashboard</h1>
@@ -50,10 +50,10 @@
 
         <%
             } else {
-                response.sendRedirect("login.jsp");
+                response.sendRedirect("login");
             }
         %>
-        <jsp:include page="../plantillas/footerGeneral.jsp"/>
-        <jsp:include page="../plantillas/necesarioScripts.jsp"/>
+        <jsp:include page="../plantillas/footerGeneral"/>
+        <jsp:include page="../plantillas/necesarioScripts"/>
     </body>
 </html>

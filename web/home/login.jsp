@@ -4,16 +4,14 @@
     Author     : Clair
 --%>
 
-<%@page import="mx.edu.itsta.Connect.Conexion"%>
 <jsp:useBean class="mx.edu.itsta.DTO.DTOLogin" id="dtoLogin" scope="session"></jsp:useBean>
 
 <%
-    Conexion conexion = new Conexion();
     int acceso = dtoLogin.getAcceso();
         
     if (acceso == 1) {
         
-           response.sendRedirect("dashboard.jsp");
+           response.sendRedirect("dashboard");
     }else{
    
      
@@ -28,10 +26,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Ingreso</title>
 
-        <jsp:include page="../plantillas/necesarioParaPw.jsp"></jsp:include>
+        <jsp:include page="../plantillas/necesarioParaPw"></jsp:include>
         </head>
 
-    <jsp:include page="../plantillas/navLogin.jsp"/>
+    <jsp:include page="../plantillas/navLogin"/>
     <div class="parallax-container">
         <div class="parallax"><img src="../img/login.jpg"></div>
 
@@ -79,7 +77,7 @@
                             <!-- start buttons -->
                             <div class="row">
                                 <div class="col m6 s12 card-action left-align">
-                                    <a class="waves-effect btn #0d47a1 blue darken-4" href="registroNuevoUsuario.jsp">¡Registrate!</a>
+                                    <a class="waves-effect btn #0d47a1 blue darken-4" href="registroNuevoUsuario">¡Registrate!</a>
                                 </div>
 
                                 <div class="col m6 s12 card-action right-align">
@@ -95,7 +93,7 @@
 
     </div>
 
-    <jsp:include page="../plantillas/footerGeneral.jsp"/>
-    <jsp:include page="../plantillas/necesarioScripts.jsp"/>
+    <jsp:include page="../plantillas/footerGeneral"/>
+    <jsp:include page="../plantillas/necesarioScripts"/>
 
 </html>

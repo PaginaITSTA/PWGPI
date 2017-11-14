@@ -6,7 +6,7 @@
 <%
     int validacion = 0;
     validacion = controller.validateUser(dtoLogin);
-    
+    System.out.println("Paso de la validación y vale: " + validacion);
     if (validacion == 1) {
         dtoLogin.setAcceso(1);
         response.sendRedirect("../dashboard");
