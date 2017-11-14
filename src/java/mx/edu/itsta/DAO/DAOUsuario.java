@@ -72,25 +72,21 @@ public class DAOUsuario implements ModelosDAO {
             con = new Conexion();
             conn = con.getConnection();
 
-            boolean encontrado = false;
-
-            con.ConectaraSQL();
             sql = conn.createStatement();
-
             ResultSet rs = sql.executeQuery("select bd_materia.verificarLogin('" + login.getCorreo() + "', '" + login.getPass() + "') as resultado;");
 
             //Nos va a regresar un 1 si pasa y un 0 si es que no pasa
+            System.out.println("Acabo el resultset");
             while (rs.next()) {
-                System.out.println("El resultado original del rs es: " + rs.getString("resultado"));
 
                 i = Integer.parseInt(rs.getString("resultado"));
-                System.out.println("El valor de i es: " + i);
-
             }
 
             con.desconectar();
             return i;
 
+        } catch (java.lang.NullPointerException ex) {
+            Logger.getLogger(DAOUsuario.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(DAOUsuario.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
