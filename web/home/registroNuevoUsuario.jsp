@@ -4,13 +4,11 @@
     Author     : Clair
 --%>
 
-<%@page import="mx.edu.itsta.DTO.DTOPersona"%>
-<%@page import="mx.edu.itsta.Connect.Conexion"%>
-<jsp:useBean class="mx.edu.itsta.DTO.DTOuser" id="DTOUser" scope="session"></jsp:useBean>
+<jsp:useBean class="mx.edu.itsta.DTO.DTOuser" id="dtoUser" scope="session"></jsp:useBean>
 
 <%
-  
- 
+
+
 %>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -29,7 +27,7 @@
             <div class="teal-text"><h3 align="center">Ingrese sus datos:</h3></div>
             <br>
 
-            <form action="Controller/nuevoUsuarioController" method="post">
+            <form action="Controller/nuevoUsuarioController.jsp" method="post">
                 <div class="row">
                     <div class="input-field col s4">
                         <input name="nombre" class="active" id="nombre" type="text" required="">
@@ -42,15 +40,15 @@
                     </div>
 
                     <div class="input-field col s4">
-                        <input name="ApeMaterno" class="active" id="ApeMaterno" type="text" required="">
-                        <label for="ApeMaterno">Apellido Materno:</label>
+                        <input name=apeMaterno" id="apeMaterno" type="text" class="active" required="">
+                        <label for="apeMaterno">Apellido Materno:</label>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s4">
-                        <input name="Correo" id="Correo" type="email" class="active" required="">
-                        <label for="Correo">E-mail:</label>
+                        <input name="correo" id="correo" type="email" class="active" required="">
+                        <label for="correo">E-mail:</label>
                     </div>
 
                     <div class="input-field col s4">
