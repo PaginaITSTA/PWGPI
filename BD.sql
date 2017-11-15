@@ -2,7 +2,8 @@
 SQLyog Ultimate v11.11 (32 bit)
 MySQL - 5.5.24-log : Database - bd_materia
 *********************************************************************
-*/
+*/
+
 
 /*!40101 SET NAMES utf8 */;
 
@@ -116,9 +117,9 @@ insert  into `usuario`(`Id_usuario`,`correo`,`password`,`Id_persona`,`id_tipouse
 /*!50003 DROP FUNCTION IF EXISTS `verificarLogin` */;
 DELIMITER $$
 
-/*!50003 CREATE DEFINER=`root`@`localhost` FUNCTION `verificarLogin`(email VARCHAR(45), passwd VARCHAR(40)) RETURNS tinyint(1)
+/*!50003 CREATE DEFINER=`root`@`localhost` FUNCTION `verificarLogin`(email VARCHAR(45), passwd VARCHAR(40), tusuario VARCHAR(50)) RETURNS tinyint(1)
 BEGIN
-	IF EXISTS(SELECT * FROM v_login WHERE Correo = email AND Contraseña = passwd) THEN
+	IF EXISTS(SELECT * FROM v_login WHERE Correo = email AND Contraseña = SHA1(passwd) AND TipoUsuario = tusuario) THEN
 	RETURN TRUE;
 	ELSE
 	RETURN FALSE;
