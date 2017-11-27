@@ -9,25 +9,25 @@ public class DTOuser {
     public String idUser = "1";
     public String nombre = "Nombre default";
     public String apePaterno = "apePaterno";
-    public String apeMaterno = "apeMaterno";
+    public String materno = "";
     public String correo = "e mail default";
     public String pass = "pass default";
     public String rePass = "";
 
-    public DTOuser(String nombre, String apePaterno, String apeMaterno, String Correo, String pass, String rePass) {
+    public DTOuser(String nombre, String apePaterno, String materno, String Correo, String pass, String rePass) {
         this.nombre = nombre;
         this.apePaterno = apePaterno;
-        this.apeMaterno = apeMaterno;
+        this.materno = materno;
         this.correo = Correo;
         this.pass = pass;
         this.rePass = rePass;
     }
 
-    public DTOuser(String id, String nombre, String apePaterno, String apeMaterno, String Correo, String pass, String rePass) {
+    public DTOuser(String id, String nombre, String apePaterno, String materno, String Correo, String pass, String rePass) {
         this.idUser = id;
         this.nombre = nombre;
         this.apePaterno = apePaterno;
-        this.apeMaterno = apeMaterno;
+        this.materno = materno;
         this.correo = Correo;
         this.pass = pass;
         this.rePass = rePass;
@@ -52,12 +52,12 @@ public class DTOuser {
         this.apePaterno = apePaterno;
     }
 
-    public String getApeMaterno() {
-        return apeMaterno;
+    public String getMaterno() {
+        return materno;
     }
 
-    public void setApeMaterno(String apeMaterno) {
-        this.apeMaterno = apeMaterno;
+    public void setMaterno(String materno) {
+        this.materno = materno;
     }
 
     public String getCorreo() {
