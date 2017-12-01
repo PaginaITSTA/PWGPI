@@ -20,35 +20,50 @@ public class DAOUsuario {
 
     Connection conn = null;
     Statement sql = null;
+    CallableStatement cstmt = null;
 
     public DAOUsuario() {
     }
 
     public int Agregar(DTOuser user) {
-//        Conexion conn;
-//        try {
-//            conn = new Conexion();
-//            conn.getConnection().setAutoCommit(false);
-//            
-//            CallableStatement PA_Agrega = conn.getConnection().
-//                    prepareCall("{ call EmpleadoAgregar(?,?,?,?,?) }");
-//            
-//            PA_Agrega.setInt(1, ((DTOUsuario) dto).getId_usuario());
-//            PA_Agrega.setString(2, ((DTOUsuario) dto).getCorreo());
-//            PA_Agrega.setString(3, ((DTOUsuario) dto).getContraseña());
-//            PA_Agrega.setInt(4, ((DTOUsuario) dto).getDatosPersona().getId_persona());
-//            PA_Agrega.setInt(5, ((DTOUsuario) dto).getTipo_user());
-//            PA_Agrega.execute();
-//            conn.getConnection().commit();
-//            conn.desconectar();
-//
-//            
-//        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
-//            Logger.getLogger(DAOUsuario.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        
-//        return ((DTOUsuario) dto).getId_usuario();
-        return 0;
+        boolean resultado;
+        int respuesta = 0;
+        Conexion con;
+        try {
+            //call bd_materia.AgregaNuevoUsuario('Alguien', 'Ape P', 'Ape M', 'alguien@example.com', '123', 1);
+            con = new Conexion();
+            con.getConnection().setAutoCommit(false);
+            cstmt = con.getConnection().prepareCall("call bd_materia.AgregaNuevoUsuario(?,?,?,?,?,?)");
+
+            cstmt.setString(1, user.getNombre());
+            cstmt.setString(2, user.getApePaterno());
+            cstmt.setString(3, user.getMaterno());
+            cstmt.setString(4, user.getCorreo());
+            cstmt.setString(5, user.getPass());
+            cstmt.setInt(6, 1);
+
+            resultado = cstmt.execute();
+
+            //con.getConnection().commit();
+            while (resultado) {
+                ResultSet rs = cstmt.getResultSet();
+                //Aqui se muestra la salida de datos
+                System.out.println(rs.getString("mesaje"));
+                user.setRespuestaRegistro("Respuesta Activa");
+                resultado = cstmt.getMoreResults();
+            }
+
+            con.desconectar();
+
+            respuesta = (resultado) ? 1 : 0;
+            System.out.println(cstmt.getString(1));
+            //user.setRespuestaRegistro(cstmt.getString("Mensaje"));
+
+        } catch (SQLException | ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
+            Logger.getLogger(DAOUsuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return respuesta;
     }
 
     public int validarUsuario(DTOLogin login) throws SQLException {
@@ -60,7 +75,7 @@ public class DAOUsuario {
             conn = con.getConnection();
 
             sql = conn.createStatement();
-            ResultSet rs = sql.executeQuery("select bd_materia.verificarLogin('" + login.getCorreo() + "', '" + login.getPass() + "') as resultado;");
+            ResultSet rs = sql.executeQuery("select bd_materia.verificarLogin('" + login.getCorreo() + "', '" + login.getPass() + "', '" + login.getTipoUser() + "') as resultado;");
 
             //Nos va a regresar un 1 si pasa y un 0 si es que no pasa
             System.out.println("Acabo el resultset");

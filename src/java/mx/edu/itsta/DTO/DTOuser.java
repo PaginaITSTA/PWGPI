@@ -13,6 +13,8 @@ public class DTOuser {
     public String correo = "e mail default";
     public String pass = "pass default";
     public String rePass = "";
+    public String respuestaRegistro = "";
+    public int paseDeRegistro = 3;
 
     public DTOuser(String nombre, String apePaterno, String materno, String Correo, String pass, String rePass) {
         this.nombre = nombre;
@@ -84,4 +86,19 @@ public class DTOuser {
         this.rePass = rePass;
     }
 
+    public String getRespuestaRegistro() {
+        return respuestaRegistro;
+    }
+
+    public void setRespuestaRegistro(String respuestaRegistro) {
+        this.respuestaRegistro = respuestaRegistro;
+    }
+
+    public int getPaseDeRegistro() {
+        return paseDeRegistro;
+    }
+
+    public void setPaseDeRegistro(int paseDeRegistro) {
+        this.paseDeRegistro = paseDeRegistro;
+    }
 }
