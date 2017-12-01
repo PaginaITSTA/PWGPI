@@ -40,10 +40,10 @@
                         <label for="materno">Apellido Paterno:</label>
                     </div>
                     <!--
-                                        <div class="input-field col s4">
-                                            <input name=apeMat" id="apeMat" type="text" class="active" required="">
-                                            <label for="apeMat">Apellido Materno:</label>
-                                        </div>
+                    <div class="input-field col s4">
+                        <input name=apeMat" id="apeMat" type="text" class="active" required="">
+                        <label for="apeMat">Apellido Materno:</label>
+                    </div>
                     -->
                 </div>
 
@@ -71,6 +71,20 @@
                 </div>
             </form>
         </div>
+
+        <%
+            String resultadoRegistro = dtoUser.getRespuestaRegistro();
+
+            if (!resultadoRegistro.isEmpty()) {
+                out.write("<button id=\"valorOculto\" value=\"" + resultadoRegistro + "\" hidden=\"\"></button>");
+        %>
+
+        <script>
+            Materialize.toast(document.getElementById("valorOculto").value, 4000, 'rounded');
+        </script>
+        <%
+            }
+        %>
 
         <jsp:include page="../plantillas/footerGeneral"/>
         <script src="./Controller/functionNuevoRegistro.js"></script>
