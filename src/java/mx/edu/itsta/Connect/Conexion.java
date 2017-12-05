@@ -2,6 +2,7 @@ package mx.edu.itsta.Connect;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Level;
@@ -35,7 +36,7 @@ public class Conexion {
      */
     public Conexion() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         Conexion.login = "root";
-        Conexion.password = "erick";
+        Conexion.password = "";
         this.ConectaraSQL();
     }
 
@@ -79,6 +80,11 @@ public class Conexion {
         return encontrado;
     }
 
+
+    
+    
+}    
+    
     /**
      *
      * public static void main(String[] args) throws SQLException { try { //Solo
@@ -98,4 +104,3 @@ public class Conexion {
      * Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex); }
      * }
      */
-}
