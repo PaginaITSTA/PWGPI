@@ -94,7 +94,7 @@
             String resultadoRegistro = dtoUser.getRespuestaRegistro();
 
             if (!resultadoRegistro.isEmpty()) {
-                out.write("<button id=\"valorOculto\" value=\"" + resultadoRegistro + "\" hidden=\"\"></button>");
+                out.write("<button id=\"valorOculto\" value=\"" + resultadoRegistro +" ></button>");
         %>
 
         <script>
