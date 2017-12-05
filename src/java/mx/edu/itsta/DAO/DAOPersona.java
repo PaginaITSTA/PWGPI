@@ -22,7 +22,7 @@ private Controller controlador;
     public int Agregar(ModelosDTO dto) throws SQLException {
 //        Conexion conn = new Conexion();
 //        conn.getConnection().setAutoCommit(false);
-       /* CallableStatement PA_Agrega = conn.getConnection().
+       /*CallableStatement PA_Agrega = conn.getConnection().
                 prepareCall("{ call PersonaAgregar(?,?,?,) }");
         //PA_Agrega.setInt(1, ((PersonaVO) mvo).getId_persona());
         PA_Agrega.setString(1, ((DTOPersona) dto).getNombre());
