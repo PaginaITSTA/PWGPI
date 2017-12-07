@@ -90,14 +90,16 @@
 
         </div>
 
+        <jsp:include page="../plantillas/necesarioScripts"/>
+
         <%
             String resultadoRegistro = dtoUser.getRespuestaRegistro();
 
             if (!resultadoRegistro.isEmpty()) {
-                out.write("<button id=\"valorOculto\" value=\"" + resultadoRegistro +" ></button>");
+                out.write("<button id=\"valorOculto\" value=\"" + resultadoRegistro + "\" hidden=\"\"></button>");
         %>
 
-        <script>
+        <script type="text/javascript">
             Materialize.toast(document.getElementById("valorOculto").value, 4000, 'rounded');
         </script>
         <%
@@ -105,6 +107,6 @@
         %>
 
         <jsp:include page="../plantillas/footerGeneral"/>
-        <jsp:include page="../plantillas/necesarioScripts"/>
+
     </body>
 </html>

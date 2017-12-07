@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import mx.edu.itsta.Connect.Conexion;
 import mx.edu.itsta.DTO.DTOLogin;
-import mx.edu.itsta.DTO.DTOUsuario;
+//import mx.edu.itsta.DTO.DTOUsuario;
 import mx.edu.itsta.DTO.DTOuser;
 
 /**
@@ -44,30 +44,20 @@ public class DAOUsuario {
 
             resultado = cstmt.execute();
 
-            
             //con.getConnection().commit();
             if (resultado) {
                 ResultSet rs = cstmt.getResultSet();
-                //Aqui se muestra la salida de datos
-//                System.out.println(rs.getString("mesaje"));
-//                user.setRespuestaRegistro("Respuesta Activa");
+
                 String nombre = "";
                 rs.next();
                 nombre = rs.getString("Mensaje");
                 user.setRespuestaRegistro(nombre);
-//                while(rs.next()){
-//                    nombre = rs.getString("Mensaje");
-                    System.out.println(nombre);
-//                }
-                
-//                resultado = cstmt.getMoreResults();
+                //System.out.println(nombre);
             }
 
             con.desconectar();
 
-            respuesta = (!resultado) ? 1 : 0;
-            //System.out.println(cstmt.getString(1));
-            //user.setRespuestaRegistro(cstmt.getString("Mensaje"));
+            respuesta = (resultado) ? 1 : 0;
 
         } catch (SQLException | ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
             Logger.getLogger(DAOUsuario.class.getName()).log(Level.SEVERE, null, ex);
@@ -103,8 +93,5 @@ public class DAOUsuario {
 
         return i;
     }
-    
-    
-
 
 }

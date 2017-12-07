@@ -36,7 +36,7 @@ public class Conexion {
      */
     public Conexion() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         Conexion.login = "root";
-        Conexion.password = "";
+        Conexion.password = "erick";
         this.ConectaraSQL();
     }
 
