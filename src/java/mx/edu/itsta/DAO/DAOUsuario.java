@@ -78,7 +78,7 @@ public class DAOUsuario {
             ResultSet rs = sql.executeQuery("select bd_materia.verificarLogin('" + login.getCorreo() + "', '" + login.getPass() + "', '" + login.getTipoUser() + "') as resultado;");
 
             //Nos va a regresar un 1 si pasa y un 0 si es que no pasa
-            System.out.println("Acabo el resultset");
+            //System.out.println("Acabo el resultset");
             while (rs.next()) {
 
                 i = Integer.parseInt(rs.getString("resultado"));
