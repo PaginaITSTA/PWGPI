@@ -21,10 +21,5 @@ public class Controller {
 
     public int nuevoUsuario(DTOuser user) {
         return MyBuss.nuevoUsuario(user);
-//        String ape = user.getNombre();
-//        if (ape.length() > 0) {
-//            return 1;
-//        }
-//        return 0;
     }
 }

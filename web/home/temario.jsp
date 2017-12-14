@@ -14,7 +14,7 @@
     </head>
     <body>
         
-        <jsp:include page="../plantillas/navLogin"/>
+        <jsp:include page="../plantillas/navTemario"/>
         <%--<img src="../img/paraFondo.jpg">--%>
         
         <div class="container">

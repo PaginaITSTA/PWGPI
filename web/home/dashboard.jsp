@@ -21,28 +21,24 @@
 
             if (tipoUsuario.equals("Alumno")) {
         %>
+
         <jsp:include page="../plantillas/navDashAlumno"/>
-
-        <h1></h1>
-        <%--<h1 align="center">Wellcome to the dashboard</h1>
-        <h2 align="center">To Alumno</h2>
-        <h2 align="center">Kinds of user</h2>--%>
-
         <%
         } else if (tipoUsuario.equals("Encargado")) {
         %>
         <jsp:include page="../plantillas/navDashEncargado"/>
-
-        <h1>-----------</h1>
-        <h1 align="center">Wellcome to the dashboard</h1>
-        <h2 align="center">To Encargado</h2>
-        <h2 align="center">Kinds of users</h2>
-
+        <!--
+                <h1>-----------</h1>
+                <h1 align="center">Wellcome to the dashboard</h1>
+                <h2 align="center">To Encargado</h2>
+                <h2 align="center">Kinds of users</h2>
+                
+        -->
         <%
         } else if (tipoUsuario.equals("Administrador")) {
         %>
         <jsp:include page="../plantillas/navDashAdministrador"/>
-        
+
         <h1>-----------</h1>
         <h1 align="center">Wellcome to the dashboard</h1>
         <h2 align="center">To Administrador</h2>

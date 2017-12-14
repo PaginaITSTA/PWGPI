@@ -12,5 +12,8 @@
         $(".carousel").carousel();
         $('.modal').modal();
         $('select').material_select();
+        $('.materialboxed').materialbox();
+        $('.tap-target').tapTarget('open');
+        $('.tap-target').tapTarget('close');
     });
 </script>
