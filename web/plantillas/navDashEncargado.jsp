@@ -69,7 +69,6 @@
 
 </div>
 
-
 <ul id="slide-out" class="side-nav #757575 grey darken-1">
     <li>
         <div class="user-view">
@@ -90,35 +89,80 @@
     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
 </ul>
 
-
+<!-- Upload file -->
 <div id="modal1" class="modal">
     <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
+        <h4>Subir archivo</h4>
+        <p>Puele elegir un archivo a la vez.</p>
 
-        <form action="../home/Controller/subir.jsp" method="post" enctype="multipart/form-data">
-            <div class="file-field input-field">
-                <div class="btn">
-                    <span>Archivo</span>
-                    <input type="file" name="file" multiple>
+        <form method="post" id="formdata" enctype="multipart/form-data">
+            <div class="row">
+                <div class="input-field col s12 m6">
+                    <select name="tipoArchivo" id="tipoArchivo">
+                        <option value="" disabled selected>Elige una opción:</option>
+                        <option value="1">Actividad</option>
+                        <option value="2">Material</option>
+                        <option value="3">Apunte</option>
+                    </select>
+                    <label for="tipoArchivo">Tipo de archivo</label>
                 </div>
-                <div class="file-path-wrapper">
-                    <input class="file-path validate" type="text" placeholder="Subir uno o más archivos">
+
+                <div class="file-field input-field col s12 m6">
+                    <div class="btn">
+                        <span>Archivo</span>
+                        <input id="file" type="file" name="file" multiple>
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" id="nameValue" value="" placeholder="Archivo a subir">
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col s12 m8">
-
-                </div>
+                <div class="col s12 m8"></div>
                 <div class="col s12 m4">
-                    <input class="waves-effect waves-light btn" type="submit" value="Subir">
+                    <input class="waves-effect waves-light btn" type="button" onclick="guardarArchivo()" value="Subir" >
                 </div>
             </div>
         </form>
 
     </div>
-    <div class="modal-footer">
-
-    </div>
+    <!--
+        <div class="modal-footer">
+    
+        </div> -->
 </div>
 
+
+<div id="respuesta"></div>
+
+
+<script type="text/javascript">
+    //Ajax probando envío de datos a file.
+    function guardarArchivo() {
+
+        var data = new FormData();
+        jQuery.each(jQuery('#file')[0].files, function (i, file) {
+            data.append('file-' + i, file);
+        });
+        var tipoArchivo = $("#tipoArchivo").val();
+        data.append('tipoArchivo', tipoArchivo);
+        //document.write("El tipo de archivo es" + tipoArchivo);
+
+        jQuery.ajax({
+            url: "../home/Controller/subir",
+            data: data,
+            cache: false,
+            contentType: false,
+            processData: false,
+            method: 'POST',
+            type: 'POST', // For jQuery < 1.9
+            success: function (data) {
+                document.getElementById("nameValue").value = "";
+                Materialize.toast('Se ha subido de manera correcta', 4000);
+            },
+            error: function (xhr, status) {
+                Materialize.toast('Ha ocurrido un error', 4000);
+            }
+        });
+    }
+</script>

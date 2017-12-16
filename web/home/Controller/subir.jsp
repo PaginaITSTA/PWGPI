@@ -14,21 +14,31 @@
     /*sacando los FileItem del ServletFileUpload en una lista */
     List items = servlet_up.parseRequest(request);
 
-    for (int i = 0; i < items.size(); i++) {
-        /*FileItem representa un archivo en memoria que puede ser pasado al disco duro*/
-        FileItem item = (FileItem) items.get(0);
-        /*item.isFormField() false=input file; true=text field*/
-        if (!item.isFormField()) {
-            /*cual sera la ruta al archivo en el servidor*/
-            File archivo_server = new File("c:/subidos/" + item.getName());
-            /*y lo escribimos en el servido*/
-            item.write(archivo_server);
-            out.print("Nombre --> " + item.getName());
-            out.print("<br> Tipo --> " + item.getContentType());
-            out.print("<br> tamaÃ±o --> " + (item.getSize() / 1240) + "KB");
-            out.print("<br>");
-        }
-    }
+    //for (int i = 0; i < items.size(); i++) {
+    /*FileItem representa un archivo en memoria que puede ser pasado al disco duro*/
+    FileItem item = (FileItem) items.get(0);
+    /*item.isFormField() false=input file; true=text field*/
+    if (!item.isFormField()) {
+        /*cual sera la ruta al archivo en el servidor*/
+        File archivo_server = new File("c:/subidos/" + item.getName());
+        /*y lo escribimos en el servido*/
+        item.write(archivo_server);
 
-    response.sendRedirect("../login");
+        System.out.println("Nombre --> " + item.getName());
+        System.out.println("Tipo --> " + item.getContentType());
+        System.out.println("Tamanio --> " + (item.getSize() / 1240) + "KB");
+    }
+    //}
+
+    String variable = items.get(1).toString();
+    System.out.println(variable);
+    //response.sendRedirect("../login");
 %>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        document.write(<%= variable%>);
+        console.log("Entro a la función");
+        console.log(<%= variable%>);
+    });
+</script>
