@@ -37,7 +37,7 @@
 
                     <div class="input-field col s4">
                         <input name="materno" class="active" id="materno" type="text" required="">
-                        <label for="materno">Apellido Paterno:</label>
+                        <label for="materno">Apellido Materno:</label>
                     </div>
                     <!--
                     <div class="input-field col s4">
