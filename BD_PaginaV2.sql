@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.6.24, for Win32 (x86)
 --
--- Host: localhost    Database: bd_materia2
+-- Host: localhost    Database: bd_materia
 -- ------------------------------------------------------
 -- Server version	5.5.27
 
