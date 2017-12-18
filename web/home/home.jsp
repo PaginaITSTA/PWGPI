@@ -22,7 +22,7 @@
         <div class="parallax-container">
             <div class="parallax"><img src="../img/home.png"></div>
             <div class="container">
-                <h1><p class="white-text center-align">Bienvenido a la materia de: <i>"Gestión del Proyectos Informaticos"</i></p></h1>
+                <h1><p class="white-text center-align">Bienvenido a la materia de: <i>"Gestión de Proyectos de Software"</i></p></h1>
             </div>
         </div>
 
@@ -33,12 +33,12 @@
             <ul class="collapsible #00897b teal darken-1" data-collapsible="accordion">
                     <li>
                         <div class="collapsible-header center-align #80cbc4 teal lighten-3">
-                            <b>Misión</b>
+                            <b>Objetivo</b>
                         </div>
                         <div class="collapsible-body white-text">
                             <!-- Texto de la página -->
-                            <p>El sitio que te brinda información de la materia de Gestión de Proyectos de Software, 
-                                donde te serán de utilidad Apuntes, Materiales, Tareas y Actividades. 
+                             <p>Brindar información de la materia de Gestión de Proyectos de Software, 
+                                donde se faciliten: Apuntes, Materiales, Tareas y Actividades. 
                                 Esto con la finalidad de que los estudiantes logren integrar todos los
                                 conocimientos adquiridos con respecto a materias del Área de Sistemas Computacionales. </p>
                         </div>
@@ -46,46 +46,45 @@
                     <li>
 
                         <div class="collapsible-header center-align #80cbc4 teal lighten-3">
-                            <b>Visión</b>
+                            <b>Presentación</b>
                         </div>
                         <div class="collapsible-body white-text">
                             <!-- Texto de la página -->
-                            <p>Que no reconozcan mejor opción competitiva de Software Tecnológico para las
-                                empresas de la Región.</p>
+                            <p>La asignatura de Gestión de proyectos de software, proporciona al estudiante los conceptos que
+                               requiere y que debe contemplar para la gestión de un proyecto de software. Por otro lado, le da la
+                               posibilidad de poner en práctica dicha gestión, ya que se sugiere que en esta asignatura, el estudiante
+                               desarrolle un proyecto de gestión de software para una organización, adquiriendo las competencias
+                               necesarias para estar al frente de dichos proyectos.</p>
                         </div>
                     </li>
 
                     <li>
                         <div class="collapsible-header center-align #80cbc4 teal lighten-3">
-                            <b>Objetivo general</b>
+                            <b>Aportación</b>
                         </div>
                         <div class="collapsible-body white-text">
                             <!-- Texto de la página -->
-                            <p>Desarrollar una página Web que brinde información de la materia de Gestión de
-                                Proyectos de Software a través de apuntes, materiales, tareas y actividades. Esto
-                                con la finalidad de que los estudiantes logren integrar todos los conocimientos
-                                adquiridos con respecto a otras materias.</p>
+                            <p>La asignatura aporta al perfil profesional, lo siguiente:<br>
+ 
+                                &bull; Implementa aplicaciones computacionales para solucionar problemas de diversos 
+                                contextos, integrando diferentes tecnologías, plataformas o dispositivos.<br>
+                                &bull; Diseña e implementa interfaces para la automatización de sistemas de hardware y 
+                                desarrollo del software asociado. <br>
+                                &bull; Coordina y participa en equipos multidisciplinarios para la aplicación de soluciones 
+                                innovadoras en diferentes contextos.<br>
+                                &bull; Desarrolla y administra software para apoyar la productividad y competitividad de las 
+                                organizaciones cumpliendo con estándares de calidad.</p>
                         </div>
                     </li>
 
                     <li>
                         <div class="collapsible-header center-align #80cbc4 teal lighten-3">
-                            <b>Objetivos específicos.</b>
+                            <b>Intención didáctica</b>
                         </div>
                         <div class="collapsible-body white-text">
                             <!-- Texto de la página -->
-                            <p>&bull; Investigar las necesidades del cliente. <br>
-                                &bull; Analizar la información para saber cuáles son los puntos más importantes
-                                del desarrollo de la página.
-                                <br>
-                                &bull; Diseñar la base de datos y los módulos de la página con la finalidad de
-                                obtener los modelos de datos.
-                                <br>
-                                &bull; Crear el diseño de la página Web y realizar la codificación.
-                                <br>
-                                &bull; Verificar y detectar los errores.
-                                <br>
-                                &bull; Implementación de la página Web.</p>
+                            <p>Que los estudiantes gestionen un proyecto de software de carácter multidisciplinario, a
+                             fin de trabajar las competencias genéricas que exige su formación profesional.</p>
                         </div>
                     </li>
                 </ul>

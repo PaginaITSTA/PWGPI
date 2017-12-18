@@ -6,7 +6,7 @@
 <jsp:useBean class="mx.edu.itsta.DTO.DTOLogin" id="dtoLogin" scope="session"></jsp:useBean>
 
     <ul id="lista" class="dropdown-content">
-        <li><a href="#!">Actividades</a></li>
+        <li><a href="../home/actividades">Actividades</a></li>
         <li><a href="#!">Materiales</a></li>
         <li class="divider"></li>
         <li><a href="#!">Apuntes</a></li>
@@ -14,7 +14,7 @@
     </ul>
 
     <ul id="lista2" class="dropdown-content">
-        <li><a href="#!">Actividades</a></li>
+        <li><a href="../home/actividades">Actividades</a></li>
         <li><a href="#!">Materiales</a></li>
         <li class="divider"></li>
         <li><a href="#!">Apuntes</a></li>
@@ -27,14 +27,14 @@
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="../index">Inicio</a></li>
-                <li><a href="../home/login">Información General</a></li>
+                <li><a href="../home/#!">Información General</a></li>
                 <li><a href="../home/temario">Temario</a></li>
                 <!-- Dropdown Trigger -->
                 <li><a class="dropdown-button" href="" data-activates="lista">Más<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="../index">Inicio</a></li>
-                <li><a href="../home/login">Información General</a></li>
+                <li><a href="#!">Información General</a></li>
                 <li><a href="../home/temario">Temario</a></li>
                 <!-- Dropdown Trigger -->
                 <li><a class="dropdown-button" href="" data-activates="lista2">Más<i class="material-icons right">arrow_drop_down</i></a></li>
@@ -81,7 +81,7 @@
                     <div class="collapsible-body white-text">
                         <!-- Texto de la página -->
                         <p>Ms. María Xóchitl Altamirano Herrera
-                            <br>Correo: <br /></p>
+                            <br>Correo: <br/></p>
                     </div>
                 </li>
             </ul>
@@ -95,10 +95,12 @@
                 <li>    
                     <div class="collapsible-header center-align #80cbc4 teal lighten-3">
                         <b>Fuentes bibliográficas</b>
+                                      
                     </div>
                     <div class="collapsible-body white-text">
                         <!-- Texto de la página -->
-                        <p>   </p>
+                        <p> Pressman, R. (2010). Ingeniería del Software, un Enfoque Práctico. (7ª Ed.). México: McGraw-Hill. 
+                        <br>Sommerville, I. (2011). Ingeniería de Software. (9ª Ed.). México: Pearson Addison-Wesley</p>
                     </div>
                 </li>
             </ul>  
