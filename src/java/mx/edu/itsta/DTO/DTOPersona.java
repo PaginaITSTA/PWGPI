@@ -4,65 +4,53 @@ package mx.edu.itsta.DTO;
  *
  * @author Yaquiii
  */
-public class DTOPersona extends ModelosDTO {
-    private int id_persona;
-    private String nombre;
-    private String ApellidoP;
-    private String ApellidoM;
+public class DTOPersona {
 
-    /**
-     * @return the id_persona
-     */
-    public int getId_persona() {
-        return id_persona;
+    public int idPersona = 1;
+    public String nombre = "Nombre Default";
+    public String apellidoP;
+    public String apellidoM;
+
+    public DTOPersona() {
     }
 
-    /**
-     * @param id_persona the id_persona to set
-     */
-    public void setId_persona(int id_persona) {
-        this.id_persona = id_persona;
+    public DTOPersona(int idPersona, String nombre, String apellidoP, String apellidoM) {
+        this.idPersona = idPersona;
+        this.nombre = nombre;
+        this.apellidoP = apellidoP;
+        this.apellidoM = apellidoM;
     }
 
-    /**
-     * @return the nombre
-     */
+    public int getIdPersona() {
+        return idPersona;
+    }
+
+    public void setIdPersona(int idPersona) {
+        this.idPersona = idPersona;
+    }
+
     public String getNombre() {
         return nombre;
     }
 
-    /**
-     * @param nombre the nombre to set
-     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    /**
-     * @return the ApellidoP
-     */
     public String getApellidoP() {
-        return ApellidoP;
+        return apellidoP;
     }
 
-    /**
-     * @param ApellidoP the ApellidoP to set
-     */
-    public void setApellidoP(String ApellidoP) {
-        this.ApellidoP = ApellidoP;
+    public void setApellidoP(String apellidoP) {
+        this.apellidoP = apellidoP;
     }
 
-    /**
-     * @return the ApellidoM
-     */
     public String getApellidoM() {
-        return ApellidoM;
+        return apellidoM;
     }
 
-    /**
-     * @param ApellidoM the ApellidoM to set
-     */
-    public void setApellidoM(String ApellidoM) {
-        this.ApellidoM = ApellidoM;
+    public void setApellidoM(String apellidoM) {
+        this.apellidoM = apellidoM;
     }
+
 }

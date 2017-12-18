@@ -1,14 +1,15 @@
 package mx.edu.itsta.Bussines;
 
 import java.sql.SQLException;
+import mx.edu.itsta.DAO.DAOFile;
 
 //Área para las consultas a la DB
 import mx.edu.itsta.DAO.DAOUsuario;
 
-
 //Área de los modelos de transporte
 import mx.edu.itsta.DTO.DTOLogin;
 import mx.edu.itsta.DTO.DTOuser;
+import mx.edu.itsta.DTO.DTOFile;
 
 /**
  *
@@ -20,9 +21,14 @@ public class Bussines {
         DAOUsuario ingreso = new DAOUsuario();
         return ingreso.validarUsuario(login);
     }
-    
-    public int nuevoUsuario(DTOuser user){
+
+    public int nuevoUsuario(DTOuser user) {
         DAOUsuario nuevoUser = new DAOUsuario();
         return nuevoUser.Agregar(user);
+    }
+
+    public int nuevoArchivo(DTOFile archivo) {
+        DAOFile newFile = new DAOFile();
+        return newFile.agregarArchivo(archivo);
     }
 }

@@ -43,13 +43,13 @@
             <button class="waves-effect waves-light btn" onclick="location = '../home/perfil'">Perfil</button>
         </div>
         <div class="row">
-            <button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Temario</button>
+            <button data-target="temario" class="btn modal-trigger">Temario</button>
         </div>
         <div class="row">
             <a href="#" data-activates="slide-out" class="button-collapse waves-effect waves-light btn">Acerca de</a>
         </div>
         <div class="row">
-            <button data-target="modal1" class="btn modal-trigger">Subir Arhivo</button>
+            <button data-target="subirArchivo" class="btn modal-trigger">Subir Arhivo</button>
         </div>
     </div>
     <div class="col s9 blue-grey darken-1">
@@ -90,10 +90,10 @@
 </ul>
 
 <!-- Upload file -->
-<div id="modal1" class="modal">
+<div id="subirArchivo" class="modal">
     <div class="modal-content">
         <h4>Subir archivo</h4>
-        <p>Puele elegir un archivo a la vez.</p>
+        <p>Puede elegir un archivo a la vez.</p>
 
         <form method="post" id="formdata" enctype="multipart/form-data">
             <div class="row">
@@ -133,36 +133,26 @@
 </div>
 
 
+<div id="temario" class="modal">
+    <div class="modal-content">
+        <h4>Temario</h4>
+        <p>Los temas que se veran en el curso.</p>
+
+        <jsp:include page="../plantillas/interiorDelTemario.jsp"/>
+
+    </div>
+
+    <div class="modal-footer">
+        <button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Más opciones del temario</button>
+    </div>
+</div>
+
+
 <div id="respuesta"></div>
 
 
-<script type="text/javascript">
-    //Ajax probando envío de datos a file.
-    function guardarArchivo() {
+<script src="../home/Controller/dashEncargado.js"></script>
 
-        var data = new FormData();
-        jQuery.each(jQuery('#file')[0].files, function (i, file) {
-            data.append('file-' + i, file);
-        });
-        var tipoArchivo = $("#tipoArchivo").val();
-        data.append('tipoArchivo', tipoArchivo);
-        //document.write("El tipo de archivo es" + tipoArchivo);
+<!--
 
-        jQuery.ajax({
-            url: "../home/Controller/subir",
-            data: data,
-            cache: false,
-            contentType: false,
-            processData: false,
-            method: 'POST',
-            type: 'POST', // For jQuery < 1.9
-            success: function (data) {
-                document.getElementById("nameValue").value = "";
-                Materialize.toast('Se ha subido de manera correcta', 4000);
-            },
-            error: function (xhr, status) {
-                Materialize.toast('Ha ocurrido un error', 4000);
-            }
-        });
-    }
-</script>
+-->

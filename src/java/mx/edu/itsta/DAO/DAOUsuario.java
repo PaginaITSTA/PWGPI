@@ -9,7 +9,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import mx.edu.itsta.Connect.Conexion;
 import mx.edu.itsta.DTO.DTOLogin;
-//import mx.edu.itsta.DTO.DTOUsuario;
 import mx.edu.itsta.DTO.DTOuser;
 
 /**
@@ -48,11 +47,8 @@ public class DAOUsuario {
             if (resultado) {
                 ResultSet rs = cstmt.getResultSet();
 
-                String nombre = "";
                 rs.next();
-                nombre = rs.getString("Mensaje");
-                user.setRespuestaRegistro(nombre);
-                //System.out.println(nombre);
+                user.setRespuestaRegistro(rs.getString("Mensaje"));
             }
 
             con.desconectar();
