@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 public class Conexion {
 
     static String login = "root";
-    static String password = "";
+    static String password = "erick";
     static String url = "jdbc:mysql://localhost:3306/bd_materia";
 
     Connection conn = null;
@@ -28,7 +28,7 @@ public class Conexion {
 
     public Conexion() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
         Conexion.login = "root";
-        Conexion.password = "";
+        Conexion.password = "erick";
         this.ConectaraSQL();
     }
 

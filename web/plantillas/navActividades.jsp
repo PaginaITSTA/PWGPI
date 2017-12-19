@@ -1,10 +1,10 @@
-<jsp:useBean class="mx.edu.itsta.DTO.DTOLogin" id="dtoLogin" scope="session"></jsp:useBean>
+<jsp:useBean class="mx.edu.itsta.DTO.DTOLogin" id="dtoLogin" scope="session"/>
 
-    <nav>
-        <div class="nav-wrapper #1565c0 blue darken-3">
-            <a href="../home/home" class="brand-logo">Gestión de Proyectos de Software</a>
+<nav>
+    <div class="nav-wrapper #1565c0 blue darken-3">
+        <a href="../home/home" class="brand-logo">Gestión de Proyectos de Software</a>
 
-            <ul class="right hide-on-med-and-down">
+        <ul class="right hide-on-med-and-down">
 
             <%
                 int acceso = dtoLogin.getAcceso();

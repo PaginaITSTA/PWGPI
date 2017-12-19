@@ -51,6 +51,7 @@
         <div class="row">
             <button data-target="subirArchivo" class="btn modal-trigger">Subir Arhivo</button>
         </div>
+
     </div>
     <div class="col s9 blue-grey darken-1">
 
@@ -131,22 +132,75 @@
     
         </div> -->
 </div>
+<!-- End upload files -->
 
-
+<!-- Temario -->
 <div id="temario" class="modal">
     <div class="modal-content">
-        <h4>Temario</h4>
-        <p>Los temas que se veran en el curso.</p>
+        <div class="row col s12">
+
+            <div class="col m8">
+                <h4>Temario</h4>
+                <p>Los temas que se veran en el curso.</p>
+            </div>
+
+            <div class="col m4">
+                <div class="row">
+                    <button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Abrir</button>
+                </div>
+                <div class="row">
+                    <button class="waves-effect waves-light btn" onclick="window.open('../pdf/Temario.pdf')">Descargar</a>
+                </div>
+            </div>
+
+        </div>
+
 
         <jsp:include page="../plantillas/interiorDelTemario.jsp"/>
 
     </div>
 
     <div class="modal-footer">
-        <button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Más opciones del temario</button>
+        <div class="row">
+            <div class="col s12 m4"></div>
+            <div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Abrir</button></div>
+            <div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="window.open('../pdf/Temario.pdf')">Descargar</a></div>
+        </div>
+
+
     </div>
 </div>
+<!-- Final temario -->
 
+<!-- Nuevo registro -->
+<div id="newUser" class="modal">
+    <div class="modal-content">
+        <div class="row col s12">
+
+
+            <h4>Temario</h4>
+            <p>Los temas que se veran en el curso.</p>
+
+
+
+        </div>
+
+
+        <jsp:include page="../plantillas/interiorDelTemario.jsp"/>
+
+    </div>
+
+    <div class="modal-footer">
+        <div class="row">
+            <div class="col s12 m4"></div>
+            <div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Abrir</button></div>
+            <div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="window.open('../pdf/Temario.pdf')">Descargar</a></div>
+        </div>
+
+
+    </div>
+</div>
+<!-- FinalNuevo registro -->
 
 <div id="respuesta"></div>
 

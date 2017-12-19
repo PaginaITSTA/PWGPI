@@ -39,12 +39,7 @@
                         <input name="materno" class="active" id="materno" type="text" required="">
                         <label for="materno">Apellido Materno:</label>
                     </div>
-                    <!--
-                    <div class="input-field col s4">
-                        <input name=apeMat" id="apeMat" type="text" class="active" required="">
-                        <label for="apeMat">Apellido Materno:</label>
-                    </div>
-                    -->
+
                 </div>
 
                 <div class="row">

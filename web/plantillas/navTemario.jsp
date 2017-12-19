@@ -12,6 +12,7 @@
                 if (acceso == 1) {
             %>
             <li><a href="../home/dashboard">Regresar</a></li>
+            <li><a href="#" onclick="window.open('../pdf/Temario.pdf')">Descargar PDF</a></li>
                 <%
                 } else {
                 %>

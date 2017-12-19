@@ -15,7 +15,6 @@
     <body>
 
         <jsp:include page="../plantillas/navTemario"/>
-        <%--<img src="../img/paraFondo.jpg">--%>
 
         <div class="container">
             <!-- Tabla de contenido de la materia -->
