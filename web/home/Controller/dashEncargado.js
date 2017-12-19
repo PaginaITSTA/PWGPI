@@ -17,7 +17,7 @@ function guardarArchivo() {
         processData: false,
         method: 'POST',
         type: 'POST', // For jQuery < 1.9
-        success: function (data) {
+        success: function (respuesta) {
             document.getElementById("nameValue").value = "";
             $("#respuesta").html(respuesta);
             Materialize.toast(document.getElementById("valorOculto").value, 4000);
@@ -29,10 +29,8 @@ function guardarArchivo() {
 }
 
 function nuevoUsuario() {
-    console.log("Entro a la función de nuevo usuario");
-
-    jQuery.ajax({
-        url: "newUserController.jsp",
+    $.ajax({
+        url: "nuevoUsuario.jsp",
         data: {
             tipoUser: $("#tipoArchivo").val(),
             nombre: $("#nombre").val(),
@@ -41,18 +39,18 @@ function nuevoUsuario() {
             mail: $("#correo").val(),
             pass: $("#pass").val()
         },
+        method: 'POST',
+        type: 'POST', // For jQuery < 1.9
         dataType: 'html',
         cache: false,
         contentType: false,
         processData: false,
-        method: 'POST',
-        type: 'POST', // For jQuery < 1.9
-        success: function (data) {
-            $("#respuesta2").html(data);
+        success: function (respuest2) {
+            $("#respuesta2").html(respuesta2);
             Materialize.toast(document.getElementById("valorOculto2").value, 4000);
         },
         error: function (xhr, status) {
-            Materialize.toast('Ha ocurrido un error', 4000);
+            Materialize.toast('Ha ocurrido un error: ' + xhr, 4000);
         }
     });
 }
@@ -70,6 +68,5 @@ function compruebaPassword() {
         }
     } else {
         btnGuarda.disabled = true;
-        //document.getElementById("btnGuarda").disabled = true; 
     }
 }

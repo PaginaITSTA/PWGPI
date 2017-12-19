@@ -7,8 +7,14 @@
 <jsp:useBean class="mx.edu.itsta.Controller.Controller" id="controller" scope="session"></jsp:useBean>
 <jsp:useBean class="mx.edu.itsta.DTO.DTOuser" id="dtoUser" scope="session"></jsp:useBean>
 
+    <script type="text/javascript">
+        $(document).ready(function () {
+            console.log($("#nombre").val());
+        });
+    </script>
 
 <%
+    System.out.println("Llego a la recepción de datos");
 
     dtoUser.setTipoUser(Integer.parseInt(request.getParameter("tipoUser")));
     dtoUser.setNombre(request.getParameter("nombre"));

@@ -37,7 +37,9 @@
     </div>
 </nav>
 
+<!-- Contenido central -->
 <div class="row #1976d2 blue darken-2">
+    <!-- Botones lado izquierdo -->
     <div class="col s3 cyan">
         <br>
         <div class="row">
@@ -55,8 +57,10 @@
         <div class="row">
             <button data-target="newUser" class="btn modal-trigger">Hacer Registro</button>
         </div>
-
     </div>
+    <!-- Final botones lado izquierdo -->
+
+    <!-- Calendario -->
     <div class="col s9 blue-grey darken-1">
 
         <div class="row">
@@ -68,11 +72,11 @@
             </object>
         </div>
         <br>
-
-
     </div>
+    <!-- Fin calendario -->
 
 </div>
+<!-- Fin contenido central -->
 
 <!-- About -->
 <ul id="slide-out" class="side-nav #757575 grey darken-1">
@@ -231,10 +235,8 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="right">
-                    <button class="waves-effect waves-light btn" id="btnGuarda" type="button" onclick="nuevoUsuario()" disabled >Guardar Datos<i class="material-icons right">send</i></button>
-                </div>
+            <div class="row right">
+                <input class="waves-effect waves-light btn" type="button" onclick="nuevoUsuario()" id="btnGuarda" value="Guardar Datos" >
             </div>
         </form>
 
@@ -251,7 +253,3 @@
 
 
 <script src="../home/Controller/dashEncargado.js"></script>
-
-<!--
-
--->
