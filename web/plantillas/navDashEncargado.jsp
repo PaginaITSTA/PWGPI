@@ -57,6 +57,9 @@
         <div class="row">
             <button data-target="newUser" class="btn modal-trigger">Hacer Registro</button>
         </div>
+        <div class="row">
+            <button data-target="verRegistros" class="btn modal-trigger">Ver Registros</button>
+        </div>
     </div>
     <!-- Final botones lado izquierdo -->
 
