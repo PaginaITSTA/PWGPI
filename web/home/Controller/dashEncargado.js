@@ -20,7 +20,7 @@ function guardarArchivo() {
         success: function (respuesta) {
             document.getElementById("nameValue").value = "";
             $("#respuesta").html(respuesta);
-            Materialize.toast(document.getElementById("valorOculto").value, 4000);
+            Materialize.toast(document.getElementById("valorOculto2").value, 4000);
         },
         error: function (xhr, status) {
             Materialize.toast('Ha ocurrido un error', 4000);
@@ -29,28 +29,30 @@ function guardarArchivo() {
 }
 
 function nuevoUsuario() {
+
     $.ajax({
-        url: "nuevoUsuario.jsp",
+        url: "../home/Controller/nuevoUsuario.jsp",
         data: {
-            tipoUser: $("#tipoArchivo").val(),
+            tipoUser: $("#tipoUsuario").val(),
             nombre: $("#nombre").val(),
             apeP: $("#apePaterno").val(),
             apeM: $("#materno").val(),
             mail: $("#correo").val(),
             pass: $("#pass").val()
         },
-        method: 'POST',
         type: 'POST', // For jQuery < 1.9
         dataType: 'html',
-        cache: false,
-        contentType: false,
-        processData: false,
-        success: function (respuest2) {
-            $("#respuesta2").html(respuesta2);
+        success: function (resp) {
+            document.getElementById("nombre").value = "";
+            document.getElementById("apePaterno").value = "";
+            document.getElementById("materno").value = "";
+            document.getElementById("correo").value = "";
+            document.getElementById("pass").value = "";
+            $("#respuesta2").html(resp);
             Materialize.toast(document.getElementById("valorOculto2").value, 4000);
         },
         error: function (xhr, status) {
-            Materialize.toast('Ha ocurrido un error: ' + xhr, 4000);
+            Materialize.toast('Ha ocurrido un error: ' + xhr + ', estatus ' + status, 4000);
         }
     });
 }
