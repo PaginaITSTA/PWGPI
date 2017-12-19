@@ -49,12 +49,12 @@
                     </div>
 
                     <div class="input-field col s4">
-                        <input name="pass" id="pass" type="password" class="active" required onkeyup="compruebaPassword()">
+                        <input name="pass" id="pass" type="password" class="active" required="" onkeyup="compruebaPassword()">
                         <label for="pass">Contraseña:</label>
                     </div>
 
                     <div class="input-field col s4">
-                        <input name="rePass" id="rePass" type="password" class="active" required onkeyup="compruebaPassword()">
+                        <input name="rePass" id="rePass" type="password" class="active" required="" onkeyup="compruebaPassword()">
                         <label for="rePass">Repita contraseña:</label>
                     </div>
                 </div>

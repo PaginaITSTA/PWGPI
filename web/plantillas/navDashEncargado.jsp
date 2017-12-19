@@ -189,57 +189,59 @@
         <div class="teal-text"><h3 align="center">Ingrese los nuevos datos:</h3></div>
         <br>
 
-        <!-- <form id="nuevoRegistro"> -->
-        <div class="row">
-            <div class="input-field col s4">
-                <select name="tipoUsuario" id="tipoUsuario" required="">
-                    <option value="" disabled selected>Elige una opción:</option>
-                    <option value="1">Alumno</option>
-                    <option value="2">Encargado</option>
-                </select>
-                <label for="tipoUsuario">Tipo de archivo</label>
+        <form method="post" id="nuevoRegistro"> 
+            <div class="row">
+                <div class="input-field col s4">
+                    <select name="tipoUsuario" id="tipoUsuario" required="">
+                        <option value="" disabled selected>Elige una opción:</option>
+                        <option value="1">Alumno</option>
+                        <option value="2">Encargado</option>
+                    </select>
+                    <label for="tipoUsuario">Tipo de archivo</label>
+                </div>
+
+                <div class="input-field col s4">
+                    <input name="nombre" class="active" id="nombre" type="text" required="">
+                    <label for="nombre">Nombre:</label>
+                </div>
+
+                <div class="input-field col s4">
+                    <input name="apePaterno" class="active" id="apePaterno" type="text" required="">
+                    <label for="apePaterno">Apellido Paterno:</label>
+                </div>
             </div>
 
-            <div class="input-field col s4">
-                <input name="nombre" class="active" id="nombre" type="text" required="">
-                <label for="nombre">Nombre:</label>
+            <div class="row">
+                <div class="input-field col s4">
+                    <input name="materno" class="active" id="materno" type="text" required="">
+                    <label for="materno">Apellido Materno:</label>
+                </div>
+
+                <div class="input-field col s4">
+                    <input name="correo" id="correo" type="email" class="active" required="">
+                    <label for="correo">E-mail:</label>
+                </div>
+
+                <div class="input-field col s4">
+                    <span id="change" class="material-icons prefix" onclick="verOcultar()">remove_red_eye</span>
+                    <input name="pass" id="pass" type="password" class="active" required="" onkeyup="compruebaPassword()">
+                    <label for="pass">Contraseña:</label>
+                </div>
             </div>
 
-            <div class="input-field col s4">
-                <input name="apePaterno" class="active" id="apePaterno" type="text" required="">
-                <label for="apePaterno">Apellido Paterno:</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="input-field col s4">
-                <input name="materno" class="active" id="materno" type="text" required="">
-                <label for="materno">Apellido Materno:</label>
+            <div class="row">
+                <div class="input-field col s4">
+                    <span id="change" class="material-icons prefix" onclick="verOcultar2()">remove_red_eye</span>
+                    <input name="rePass" id="rePass" type="password" class="active" required="" onkeyup="compruebaPassword()">
+                    <label for="rePass">Repita contraseña:</label>
+                </div>
             </div>
 
-            <div class="input-field col s4">
-                <input name="correo" id="correo" type="email" class="active" required="">
-                <label for="correo">E-mail:</label>
+            <div class="row right">
+                <!-- <input class="waves-effect waves-light btn" type="button" onclick="nuevoUsuario()" id="btnGuarda" value="Guardar Datos" disabled> -->
+                <button class="waves-effect waves-light btn" type="button" onclick="nuevoUsuario()" id="btnGuarda" disabled>Guardar Datos</button>
             </div>
-
-            <div class="input-field col s4">
-                <input name="pass" id="pass" type="password" class="active" required onkeyup="compruebaPassword()">
-                <label for="pass">Contraseña:</label>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="input-field col s4">
-                <input name="rePass" id="rePass" type="password" class="active" required onkeyup="compruebaPassword()">
-                <label for="rePass">Repita contraseña:</label>
-            </div>
-        </div>
-
-        <div class="row right">
-            <!-- <input class="waves-effect waves-light btn" type="button" onclick="nuevoUsuario()" id="btnGuarda" value="Guardar Datos" disabled> -->
-            <button class="waves-effect waves-light btn" type="button" onclick="nuevoUsuario()" id="btnGuarda" disabled>Guardar Datos</button>
-        </div>
-        <!-- </form> -->
+        </form>
 
     </div>
     <!--
@@ -251,6 +253,5 @@
 
 <div id="respuesta"></div>
 <div id="respuesta2"></div>
-
 
 <script src="../home/Controller/dashEncargado.js"></script>
