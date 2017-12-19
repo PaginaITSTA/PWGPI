@@ -36,6 +36,7 @@
         </ul>
     </div>
 </nav>
+
 <div class="row #1976d2 blue darken-2">
     <div class="col s3 cyan">
         <br>
@@ -50,6 +51,9 @@
         </div>
         <div class="row">
             <button data-target="subirArchivo" class="btn modal-trigger">Subir Arhivo</button>
+        </div>
+        <div class="row">
+            <button data-target="newUser" class="btn modal-trigger">Hacer Registro</button>
         </div>
 
     </div>
@@ -70,6 +74,7 @@
 
 </div>
 
+<!-- About -->
 <ul id="slide-out" class="side-nav #757575 grey darken-1">
     <li>
         <div class="user-view">
@@ -89,6 +94,7 @@
     <li><a class="subheader">Subheader</a></li>
     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
 </ul>
+<!-- End about -->
 
 <!-- Upload file -->
 <div id="subirArchivo" class="modal">
@@ -127,10 +133,7 @@
         </form>
 
     </div>
-    <!--
-        <div class="modal-footer">
-    
-        </div> -->
+
 </div>
 <!-- End upload files -->
 
@@ -175,34 +178,76 @@
 <!-- Nuevo registro -->
 <div id="newUser" class="modal">
     <div class="modal-content">
-        <div class="row col s12">
+        <!--
+        <h4>Registro de nuevo usuario</h4>
+        <p>Puede registrar alumnos, como nuevos encargados.</p>
+        -->
+        <div class="teal-text"><h3 align="center">Ingrese los nuevos datos:</h3></div>
+        <br>
 
+        <form method="post" id="nuevoRegistro">
+            <div class="row">
+                <div class="input-field col s4">
+                    <select name="tipoArchivo" id="tipoArchivo" required="">
+                        <option value="" disabled selected>Elige una opción:</option>
+                        <option value="1">Alumno</option>
+                        <option value="2">Encargado</option>
+                    </select>
+                    <label for="tipoArchivo">Tipo de archivo</label>
+                </div>
 
-            <h4>Temario</h4>
-            <p>Los temas que se veran en el curso.</p>
+                <div class="input-field col s4">
+                    <input name="nombre" class="active" id="nombre" type="text" required="">
+                    <label for="nombre">Nombre:</label>
+                </div>
 
+                <div class="input-field col s4">
+                    <input name="apePaterno" class="active" id="apePaterno" type="text" required="">
+                    <label for="apePaterno">Apellido Paterno:</label>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="input-field col s4">
+                    <input name="materno" class="active" id="materno" type="text" required="">
+                    <label for="materno">Apellido Materno:</label>
+                </div>
 
-        </div>
+                <div class="input-field col s4">
+                    <input name="correo" id="correo" type="email" class="active" required="">
+                    <label for="correo">E-mail:</label>
+                </div>
 
+                <div class="input-field col s4">
+                    <input name="pass" id="pass" type="password" class="active" required onkeyup="compruebaPassword()">
+                    <label for="pass">Contraseña:</label>
+                </div>
+            </div>
 
-        <jsp:include page="../plantillas/interiorDelTemario.jsp"/>
+            <div class="row">
+                <div class="input-field col s4">
+                    <input name="rePass" id="rePass" type="password" class="active" required onkeyup="compruebaPassword()">
+                    <label for="rePass">Repita contraseña:</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="right">
+                    <button class="waves-effect waves-light btn" id="btnGuarda" type="button" onclick="nuevoUsuario()" disabled >Guardar Datos<i class="material-icons right">send</i></button>
+                </div>
+            </div>
+        </form>
 
     </div>
-
-    <div class="modal-footer">
-        <div class="row">
-            <div class="col s12 m4"></div>
-            <div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Abrir</button></div>
-            <div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="window.open('../pdf/Temario.pdf')">Descargar</a></div>
+    <!--
+        <div class="modal-footer">
         </div>
-
-
-    </div>
+    -->
 </div>
 <!-- FinalNuevo registro -->
 
 <div id="respuesta"></div>
+<div id="respuesta2"></div>
 
 
 <script src="../home/Controller/dashEncargado.js"></script>

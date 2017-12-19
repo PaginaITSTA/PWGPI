@@ -39,7 +39,7 @@ public class DAOUsuario {
             cstmt.setString(3, user.getMaterno());
             cstmt.setString(4, user.getCorreo());
             cstmt.setString(5, user.getPass());
-            cstmt.setInt(6, 1);
+            cstmt.setInt(6, user.getTipoUser());
 
             resultado = cstmt.execute();
 

@@ -26,8 +26,6 @@ public class Controller {
     }
 
     public int guardarArchivo(DTOFile archivo) {
-        //System.out.println("Datos: " + archivo.getIdTipoArchivo() + ", " + archivo.getIdTipoUsuario() + ", " + archivo.getNombreArchivo());
-        //System.out.println("");
         return MyBuss.nuevoArchivo(archivo);
     }
 }

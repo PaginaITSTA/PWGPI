@@ -49,7 +49,7 @@
                     </div>
 
                     <div class="input-field col s4">
-                        <input name="pass" id="pass" type="password" class="active" required>
+                        <input name="pass" id="pass" type="password" class="active" required onkeyup="compruebaPassword()">
                         <label for="pass">Contraseña:</label>
                     </div>
 
@@ -61,6 +61,9 @@
 
                 <div class="row">
                     <div class="right">
+                        <%
+                            dtoUser.setTipoUser(1);
+                        %>
                         <button id="btnGuarda" class="waves-effect waves-light btn" type="submit" disabled>Completa tu registro<i class="material-icons right">send</i></button>
                     </div>
                 </div>
