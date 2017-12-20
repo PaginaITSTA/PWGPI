@@ -113,7 +113,6 @@
             <div class="row">
                 <div class="input-field col s12 m6">
                     <select name="tipoArchivo" id="tipoArchivo">
-                        <option value="" disabled selected>Elige una opción:</option>
                         <option value="1">Actividad</option>
                         <option value="2">Material</option>
                         <option value="3">Apunte</option>
@@ -253,6 +252,40 @@
     -->
 </div>
 <!-- FinalNuevo registro -->
+
+<!-- Ver registro -->
+<div id="verRegistros" class="modal">
+    <div class="modal-content">
+        <div class="row col s12">
+
+            <div class="col m8">
+                <h4>Registros</h4>
+                <p>Los temas que se veran en el curso.</p>
+            </div>
+
+            <div class="col m4">
+                <div class="row">
+                    <button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Abrir</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <jsp:include page="../plantillas/interiorVerRegistros.jsp"/>
+
+    </div>
+
+    <div class="modal-footer">
+        <div class="row">
+            <div class="col s12 m4"></div>
+            <div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Abrir</button></div>
+        </div>
+
+
+    </div>
+</div>
+<!-- Final Ver registro -->
 
 <div id="respuesta"></div>
 <div id="respuesta2"></div>

@@ -14,5 +14,6 @@
         $('select').material_select();
         $('.materialboxed').materialbox();
         $('.modal').modal();
+        $('ul.tabs').tabs();
     });
 </script>

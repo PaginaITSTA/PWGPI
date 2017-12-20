@@ -12,6 +12,14 @@
         <servlet-name>subir</servlet-name>
         <url-pattern>/home/Controller/subir</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index.py</url-pattern>
+        <url-pattern>/index.hs</url-pattern>
+        <url-pattern>/index.php</url-pattern>
+        <url-pattern>/index.html</url-pattern>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>10</session-timeout>
     </session-config>
@@ -113,10 +121,6 @@
         <servlet-name>footerHome</servlet-name>
         <jsp-file>/plantillas/footerHome.jsp</jsp-file>
     </servlet>
-    <servlet-mapping>
-        <servlet-name>index</servlet-name>
-        <url-pattern>/index</url-pattern>
-    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>limpiarSession</servlet-name>
         <url-pattern>/home/Controller/limpiarSession</url-pattern>

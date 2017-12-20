@@ -6,26 +6,34 @@ function guardarArchivo() {
     });
 
     var tipoArchivo = $("#tipoArchivo").val();
-    data.append('tipoArchivo', tipoArchivo);
+    var tamTipoArchivo = tipoArchivo.length;
 
-    jQuery.ajax({
-        url: "../home/Controller/subir",
-        data: data,
-        dataType: 'html',
-        cache: false,
-        contentType: false,
-        processData: false,
-        method: 'POST',
-        type: 'POST', // For jQuery < 1.9
-        success: function (respuesta) {
-            document.getElementById("nameValue").value = "";
-            $("#respuesta").html(respuesta);
-            Materialize.toast(document.getElementById("valorOculto2").value, 4000);
-        },
-        error: function (xhr, status) {
-            Materialize.toast('Ha ocurrido un error', 4000);
-        }
-    });
+    if (tamTipoArchivo > 0) {
+        data.append('tipoArchivo', tipoArchivo);
+
+        $.ajax({
+            url: "../home/Controller/subir",
+            data: data,
+            dataType: 'html',
+            cache: false,
+            contentType: false,
+            processData: false,
+            method: 'POST',
+            type: 'POST', // For jQuery < 1.9
+            success: function (respuesta) {
+                document.getElementById("nameValue").value = "";
+                $("#respuesta").html(respuesta);
+                Materialize.toast(document.getElementById("valorOculto2").value, 4000);
+            },
+            error: function (xhr, status) {
+                Materialize.toast('Ha ocurrido un error', 4000);
+            }
+        });
+    } else {
+        Materialize.toast('Debe de señalar que tipo de archivo es', 4000);
+    }
+
+
 }
 
 function nuevoUsuario() {

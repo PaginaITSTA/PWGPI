@@ -6,6 +6,7 @@ package mx.edu.itsta.Controller;
  */
 //Para importar los objetos que van a transportar la informacion.
 import java.sql.SQLException;
+import java.util.ArrayList;
 import mx.edu.itsta.Bussines.Bussines;
 
 import mx.edu.itsta.DTO.DTOLogin;
@@ -27,5 +28,13 @@ public class Controller {
 
     public int guardarArchivo(DTOFile archivo) {
         return MyBuss.nuevoArchivo(archivo);
+    }
+
+    public ArrayList<DTOuser> getEncargados() {
+        return MyBuss.getEncargados();
+    }
+
+    public ArrayList<DTOuser> getAlumnos() {
+        return MyBuss.getAlumnos();
     }
 }

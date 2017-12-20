@@ -1,6 +1,7 @@
 package mx.edu.itsta.Bussines;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import mx.edu.itsta.DAO.DAOFile;
 
 //Área para las consultas a la DB
@@ -30,5 +31,15 @@ public class Bussines {
     public int nuevoArchivo(DTOFile archivo) {
         DAOFile newFile = new DAOFile();
         return newFile.agregarArchivo(archivo);
+    }
+
+    public ArrayList<DTOuser> getEncargados() {
+        DAOUsuario encargados = new DAOUsuario();
+        return encargados.verEncargados();
+    }
+    
+    public ArrayList<DTOuser> getAlumnos() {
+        DAOUsuario encargados = new DAOUsuario();
+        return encargados.verAlumnos();
     }
 }

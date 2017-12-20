@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import mx.edu.itsta.Connect.Conexion;
@@ -20,6 +21,7 @@ public class DAOUsuario {
     Connection conn = null;
     Statement sql = null;
     CallableStatement cstmt = null;
+    ArrayList<DTOuser> list;
 
     public DAOUsuario() {
     }
@@ -90,4 +92,61 @@ public class DAOUsuario {
         return i;
     }
 
+    public ArrayList<DTOuser> verEncargados() {
+        boolean resultado;
+        Conexion con;
+
+        list = new ArrayList<>();
+
+        try {
+            con = new Conexion();
+            con.getConnection().setAutoCommit(false);
+
+            cstmt = con.getConnection().prepareCall("SELECT * FROM bd_materia.vencargado;");
+
+            resultado = cstmt.execute();
+
+            if (resultado) {
+                ResultSet rs = cstmt.getResultSet();
+
+                while (rs.next()) {
+                    list.add(new DTOuser(rs.getString("Correo"), rs.getString("Nombre"), rs.getString("ApellidoPaterno"), rs.getString("ApellidoMaterno")));
+                }
+
+            }
+        } catch (SQLException | ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
+            Logger.getLogger(DAOUsuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return list;
+    }
+
+    public ArrayList<DTOuser> verAlumnos() {
+        boolean resultado;
+        Conexion con;
+
+        list = new ArrayList<>();
+
+        try {
+            con = new Conexion();
+            con.getConnection().setAutoCommit(false);
+
+            cstmt = con.getConnection().prepareCall("SELECT * FROM bd_materia.valumnos;");
+
+            resultado = cstmt.execute();
+
+            if (resultado) {
+                ResultSet rs = cstmt.getResultSet();
+
+                while (rs.next()) {
+                    list.add(new DTOuser(rs.getString("Correo"), rs.getString("Nombre"), rs.getString("ApellidoPaterno"), rs.getString("ApellidoMaterno")));
+                }
+
+            }
+        } catch (SQLException | ClassNotFoundException | InstantiationException | IllegalAccessException ex) {
+            Logger.getLogger(DAOUsuario.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return list;
+    }
 }

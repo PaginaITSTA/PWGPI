@@ -36,6 +36,13 @@ public class DTOuser {
         this.rePass = rePass;
     }
 
+    public DTOuser(String correo, String nombre, String apePaterno, String apeMaterno) {
+        this.correo = correo;
+        this.nombre = nombre;
+        this.apePaterno = apePaterno;
+        this.materno = apeMaterno;
+    }
+
     public DTOuser() {
     }
 
