@@ -1,3 +1,4 @@
+
 <%-- 
     Document   : registroNuevoUsuario
     Created on : 27/09/2017, 11:46:19 PM
@@ -25,6 +26,7 @@
 
             <form action="Controller/nuevoUsuarioController.jsp" method="post">
                 <div class="row">
+                                       
                     <div class="input-field col s4">
                         <input name="nombre" class="active" id="nombre" type="text" required="">
                         <label for="nombre">Nombre:</label>
@@ -40,9 +42,9 @@
                         <label for="materno">Apellido Materno:</label>
                     </div>
 
-                </div>
+                
 
-                <div class="row">
+                    <%-- <div class="row">--%>
                     <div class="input-field col s4">
                         <input name="correo" id="correo" type="email" class="active" required="">
                         <label for="correo">E-mail:</label>
@@ -75,6 +77,8 @@
 
             if (!resultadoRegistro.isEmpty()) {
                 out.write("<button id=\"valorOculto\" value=\"" + resultadoRegistro + "\" hidden=\"\"></button>");
+            }
+            
         %>
 
         <script>
