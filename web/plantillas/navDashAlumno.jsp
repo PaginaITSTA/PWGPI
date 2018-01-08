@@ -6,43 +6,40 @@
 <jsp:useBean class="mx.edu.itsta.DTO.DTOLogin" id="dtoLogin" scope="session"></jsp:useBean>
 
     <ul id="lista" class="dropdown-content">
+        <li><a href="../home/actividades.jsp">Actividades</a></li>
+        <li><a href="../home/Archivos.jsp">Archivos</a></li>
+        <li class="divider"></li>
+        <li><a href="../home/Controller/limpiarSession">Cerrar Sesión</a></li>
+    </ul>
+
+<%--<ul id="lista2" class="dropdown-content">
         <li><a href="../home/actividades">Actividades</a></li>
-        <li><a href="#!">Materiales</a></li>
+        <li><a href="../home/Materiales">Materiales</a></li>
         <li class="divider"></li>
         <li><a href="#!">Apuntes</a></li>
         <li><a href="../home/Controller/limpiarSession">Cerrar Sesión</a></li>
     </ul>
-
-    <ul id="lista2" class="dropdown-content">
-        <li><a href="../home/actividades">Actividades</a></li>
-        <li><a href="#!">Materiales</a></li>
-        <li class="divider"></li>
-        <li><a href="#!">Apuntes</a></li>
-        <li><a href="../home/Controller/limpiarSession">Cerrar Sesión</a></li>
-    </ul>
-
+--%>
     <nav>
         <div class="nav-wrapper #1565c0 blue darken-3">
             <a href="../home/home" class="brand-logo">Gestión de Proyectos de Software</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">Menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="../index">Inicio</a></li>
-                <li><a href="../home/#!">Información General</a></li>
+                <%--<li><a href="../index">Inicio</a></li>
+                <li><a href="../home/InformaciónGeneral">Información General</a></li>--%>
                 <li><a href="../home/temario">Temario</a></li>
                 <!-- Dropdown Trigger -->
                 <li><a class="dropdown-button" href="" data-activates="lista">Más<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
-            <ul class="side-nav" id="mobile-demo">
-                <li><a href="../index">Inicio</a></li>
-                <li><a href="#!">Información General</a></li>
+                <%--<ul class="side-nav" id="mobile-demo">
+                <%--<li><a href="../index">Inicio</a></li>--%>
+                <%--<li><a href="../home/InformaciónGeneral">Información General</a></li>
                 <li><a href="../home/temario">Temario</a></li>
                 <!-- Dropdown Trigger -->
                 <li><a class="dropdown-button" href="" data-activates="lista2">Más<i class="material-icons right">arrow_drop_down</i></a></li>
-            </ul>
+            </ul>--%>
         </div>
     </nav>
-
-
 
 
     <div class="parallax-container">
@@ -61,9 +58,11 @@
                     </div>
                     <div class="collapsible-body white-text">
                         <!-- Texto de la página -->
-                        <p> <td><a href="https://sg.com.mx/revista/1/swebok-desarrollar-es-mucho-mas-que-programar#.We1pTo_Ww1I">Ingenieria en sistemas</a></td> 
-                        <br><td><a href=" ">Ingenieria en sistemas</a></td> <br />
-                        <br><td><a href=" ">Ingenieria en sistemas</a></td> <br />
+                        <p> <td><a href="https://sg.com.mx/revista/1/swebok-desarrollar-es-mucho-mas-que-programar#.We1pTo_Ww1I">Ingeniería de Software</a></td> 
+                        <br><td><a href="http://www.ganttproject.biz/">GanttProject</a></td> 
+                        <br><td><a href="https://www.tutorialspoint.com/es/software_engineering/software_project_management.htm">Software Project Management</a></td>
+                        <br><td><a href="https://www.inf.utfsm.cl/~guerra/publicaciones/Gestion%20de%20Proyectos%20de%20Software.pdf">Gestión de Proyectos</a></td>
+                        <br><td><a href="http://www.uml-diagrams.org/."> UML</a></td> <br />
                         </p>                           
                     </div>
                 </li>
@@ -81,7 +80,7 @@
                     <div class="collapsible-body white-text">
                         <!-- Texto de la página -->
                         <p>Ms. María Xóchitl Altamirano Herrera
-                            <br>Correo: <br/></p>
+                            <br>Correo: xochitl2422@gmail.com <br/></p>
                     </div>
                 </li>
             </ul>
