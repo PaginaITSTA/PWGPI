@@ -27,12 +27,12 @@
 
     }
 
-    item = (FileItem) items.get(1);
+    item = (FileItem) items.get(0);
 
     String variable = item.getString();
 
-    dtoFile.setIdTipoArchivo(variable);
-    dtoFile.setIdTipoUsuario(dtoPersona.getIdPersona() + "");
+    dtoFile.setIdTipoArchivo(Integer.parseInt(variable));
+    dtoFile.setIdTipoUsuario("c:/subidos/"+nombreArchivo);
     dtoFile.setNombreArchivo(nombreArchivo);
 
     int resultado = controller.guardarArchivo(dtoFile);
