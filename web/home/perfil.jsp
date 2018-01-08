@@ -71,10 +71,12 @@
                                 </div>
 
                             </div>
-                            <div cla
-                                 ss="card-action">
+                            <div class="card-action">
                                 <div class="right">
-                                    <button id="btnGuarda" class="waves-effect waves-light btn" type="submit" disabled>Guardar cambios.<i class="material-icons right">send</i></button>
+                            <%
+                            datosUsuario.setTipoUser(1);
+                            %>
+                                  <button id="btnGuarda" class="waves-effect waves-light btn" type="submit" disabled>Guardar cambios.<i class="material-icons right">send</i></button>
                                 </div>
                                 <br><br>
                             </div>
@@ -84,7 +86,19 @@
                 </div>
             </div>
         </div>
+         <%
+            String resultadoRegistro = datosUsuario.getRespuestaRegistro();
 
+            if (!resultadoRegistro.isEmpty()) {
+                out.write("<button id=\"valorOculto\" value=\"" + resultadoRegistro + "\" hidden=\"\"></button>");
+        %>
+
+        <script>
+            Materialize.toast(document.getElementById("valorOculto").value, 4000, 'rounded');
+        </script>
+        <%
+            }
+        %>
         <jsp:include page="../plantillas/footerGeneral"/>
         <script src="./Controller/verOcultarPass.js"></script>
         <jsp:include page="../plantillas/necesarioScripts"/>
