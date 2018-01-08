@@ -27,23 +27,12 @@
         } else if (tipoUsuario.equals("Encargado")) {
         %>
         <jsp:include page="../plantillas/navDashEncargado"/>
-        <!--
-                <h1>-----------</h1>
-                <h1 align="center">Wellcome to the dashboard</h1>
-                <h2 align="center">To Encargado</h2>
-                <h2 align="center">Kinds of users</h2>
-                
-        -->
+        
         <%
         } else if (tipoUsuario.equals("Administrador")) {
         %>
         <jsp:include page="../plantillas/navDashAdministrador"/>
-
-        <h1>-----------</h1>
-        <h1 align="center">Wellcome to the dashboard</h1>
-        <h2 align="center">To Administrador</h2>
-        <h2 align="center">Kinds of users</h2>
-
+        
         <%
             } else {
                 response.sendRedirect("login");
