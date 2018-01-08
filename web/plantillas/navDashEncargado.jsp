@@ -4,35 +4,35 @@
     Author     : Clair
 --%>
 
-<ul id="lista" class="dropdown-content">
+<%--<ul id="lista" class="dropdown-content">
     <li><a >Temario</a></li>
     <li class="divider"></li>
-    <li><a href="#!">Actividades</a></li>
-    <li><a href="#!">Apuntes</a></li>
-    <li><a href="#!">Materiales</a></li>    
+    <li><a href="../home/actividades.jsp">Actividades</a></li>
+    <li><a href="../home/Apuntes">Apuntes</a></li>
+    <li><a href="../home/Materiales">Materiales</a></li>    
 </ul>
 
 <ul id="lista2" class="dropdown-content">
     <li><a href="../home/temario">Temario</a></li>
     <li class="divider"></li>
-    <li><a href="#!">Actividades</a></li>
-    <li><a href="#!">Apuntes</a></li>
-    <li><a href="#!">Materiales</a></li>    
-</ul>
+    <li><a href="../home/actividades.jsp">Actividades</a></li>
+    <li><a href="../home/Apuntes">Apuntes</a></li>
+    <li><a href="../home/Materiales">Materiales</a></li>    
+</ul>--%>
 
 <nav>
     <div class="nav-wrapper #1565c0 blue darken-3">
         <a href="../home/home" class="brand-logo">Gestión de Proyectos de Software</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">Menu</i></a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="../index">Inicio</a></li>
-            <li><a href="../home/perfil">Perfil</a></li>
-            <li><a href="../home/Controller/limpiarSession">Cerrar sesión</a></li>
+            
+            <%--<li><a href="../home/perfil">Perfil</a></li>--%>
+            <li><a href="../home/Controller/limpiarSession">Cerrar Sesión</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-            <li><a href="../index">Inicio</a></li>
-            <li><a href="../home/perfil">Perfil</a></li>
-            <li><a href="../home/Controller/limpiarSession">Cerrar sesión</a></li>
+            
+            <%--<li><a href="../home/perfil">Perfil</a></li>--%>
+            <li><a href="../home/Controller/limpiarSession">Cerrar Sesión</a></li>
         </ul>
     </div>
 </nav>
@@ -42,21 +42,21 @@
     <!-- Botones lado izquierdo -->
     <div class="col s3 cyan">
         <br>
-        <div class="row">
+        <%--<div class="row">
             <button class="waves-effect waves-light btn" onclick="location = '../home/perfil'">Perfil</button>
-        </div>
+        </div>--%>
         <div class="row">
             <button data-target="temario" class="btn modal-trigger">Temario</button>
         </div>
-        <div class="row">
+        <%--<div class="row">
             <a href="#" data-activates="slide-out" class="button-collapse waves-effect waves-light btn">Acerca de</a>
-        </div>
+        </div>--%>
         <div class="row">
             <button data-target="subirArchivo" class="btn modal-trigger">Subir Arhivo</button>
         </div>
-        <div class="row">
+        <%--<div class="row">
             <button data-target="newUser" class="btn modal-trigger">Hacer Registro</button>
-        </div>
+        </div>--%>
         <div class="row">
             <button data-target="verRegistros" class="btn modal-trigger">Ver Registros</button>
         </div>
@@ -82,7 +82,7 @@
 <!-- Fin contenido central -->
 
 <!-- About -->
-<ul id="slide-out" class="side-nav #757575 grey darken-1">
+<%--<ul id="slide-out" class="side-nav #757575 grey darken-1">
     <li>
         <div class="user-view">
             <div class="background">
@@ -100,7 +100,7 @@
 
     <li><a class="subheader">Subheader</a></li>
     <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-</ul>
+</ul>--%>
 <!-- End about -->
 
 <!-- Upload file -->
@@ -150,7 +150,7 @@
 
             <div class="col m8">
                 <h4>Temario</h4>
-                <p>Los temas que se veran en el curso.</p>
+                <p>Los temas que se verán en el curso.</p>
             </div>
 
             <div class="col m4">
@@ -163,26 +163,21 @@
             </div>
 
         </div>
-
-
         <jsp:include page="../plantillas/interiorDelTemario.jsp"/>
 
     </div>
-
-    <div class="modal-footer">
+        <%--<div class="modal-footer">
         <div class="row">
             <div class="col s12 m4"></div>
             <div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Abrir</button></div>
             <div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="window.open('../pdf/Temario.pdf')">Descargar</a></div>
         </div>
-
-
-    </div>
+    </div>--%>
 </div>
 <!-- Final temario -->
 
 <!-- Nuevo registro -->
-<div id="newUser" class="modal">
+<%--<div id="newUser" class="modal">
     <div class="modal-content">
         <!--
         <h4>Registro de nuevo usuario</h4>
@@ -199,7 +194,7 @@
                         <option value="1">Alumno</option>
                         <option value="2">Encargado</option>
                     </select>
-                    <label for="tipoUsuario">Tipo de archivo</label>
+                    <label for="tipoUsuario">Tipo de Usuario</label>
                 </div>
 
                 <div class="input-field col s4">
@@ -250,7 +245,7 @@
         <div class="modal-footer">
         </div>
     -->
-</div>
+</div>--%>
 <!-- FinalNuevo registro -->
 
 <!-- Ver registro -->
@@ -260,29 +255,26 @@
 
             <div class="col m8">
                 <h4>Registros</h4>
-                <p>Los temas que se veran en el curso.</p>
+                <p>Lista de los registros de los alumnos.</p>
             </div>
 
             <div class="col m4">
                 <div class="row">
-                    <button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Abrir</button>
+                    <button class="waves-effect waves-light btn" onclick="location = '../home/RegistrosA.jsp'">Abrir</button>
                 </div>
             </div>
-
         </div>
 
-
-        <jsp:include page="../plantillas/interiorVerRegistros.jsp"/>
+        <jsp:include page="../plantillas/interiorRegistrosAlumnos.jsp"/>
 
     </div>
 
     <div class="modal-footer">
         <div class="row">
             <div class="col s12 m4"></div>
-            <div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Abrir</button></div>
+            <%--<div class="col s12 m4 center-align"><button class="waves-effect waves-light btn" onclick="location = '../home/temario'">Abrir</button></div>--%>
+            
         </div>
-
-
     </div>
 </div>
 <!-- Final Ver registro -->
