@@ -20,17 +20,20 @@
     dtoUser.setCorreo(request.getParameter("mail"));
     dtoUser.setPass(request.getParameter("pass"));
 
-    //System.out.println("Los datos guardados son: " + dtoUser.getNombre() + " " + dtoUser.getApePaterno() + " " + dtoUser.getMaterno() + " " + dtoUser.getCorreo() + " " + dtoUser.getPass());
+    
     int resultado = 0;
     resultado = controller.nuevoUsuario(dtoUser);
 
     //System.out.println("El resultado de la consola es: " + resultado);
     if (resultado == 1) {
+        
 %>
 <button id="valorOculto2" hidden="" value="<%= dtoUser.getRespuestaRegistro()%>"></button>
+<%--response.sendRedirect("../login");--%>
 <%
 } else {
-    response.sendRedirect("../registroNuevoUsuario");
+System.out.println("Los datos guardados son: " + dtoUser.getNombre() + " " + dtoUser.getApePaterno() + " " + dtoUser.getMaterno() + " " + dtoUser.getCorreo() + " " + dtoUser.getPass());
+    response.sendRedirect("../login");
 %>
 <button id="valorOculto2" hidden="" value="<%= dtoUser.getRespuestaRegistro()%>"></button>
 <%
