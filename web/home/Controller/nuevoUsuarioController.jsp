@@ -13,7 +13,10 @@
     if (resultado == 1) {
         //System.out.println("Los datos guardados son: " + user.getNombre() + " " + user.getApePaterno() + " " + user.getApeMaterno() + " " + user.Correo + " " + user.getPass());
         response.sendRedirect("../login");
+ 
     } else {
-        response.sendRedirect("../registroNuevoUsuario");
+        dtoUser.setRespuestaRegistro("Se registro correctamente");
+        response.sendRedirect("../login");
+        
     }
 %>
